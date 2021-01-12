@@ -17,14 +17,17 @@ public class ButtonCollison : MonoBehaviour{
 
     private void OnTriggerStay2D(Collider2D other)
     {
+        Debug.Log("Button Pressed");
         animate.SetBool("ButtonPressed", true);
         buttonActivated = true;
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        Debug.Log("Button Released");
         animate.SetBool("ButtonPressed", false);
         buttonActivated = false;
+        //sdiubdfvjfin
     }
 
 }

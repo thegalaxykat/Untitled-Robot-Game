@@ -1,0 +1,1256 @@
+fileFormatVersion: 2
+guid: 0d0ae213544d74441840f62be27fb837
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3322523931271715973
+    second: GooSprites-01_0
+  - first:
+      213: 861004813390311246
+    second: GooSprites-01_1
+  - first:
+      213: 1016989864893663750
+    second: GooSprites-01_2
+  - first:
+      213: 3022255735455630336
+    second: GooSprites-01_3
+  - first:
+      213: 1933467401001305998
+    second: GooSprites-01_4
+  - first:
+      213: 5572729327016966191
+    second: GooSprites-01_5
+  - first:
+      213: 1309897622825591445
+    second: GooSprites-01_6
+  - first:
+      213: -3091558470918116372
+    second: GooSprites-01_7
+  - first:
+      213: 5532423112035236118
+    second: GooSprites-01_8
+  - first:
+      213: -2978140193132335406
+    second: GooSprites-01_9
+  - first:
+      213: 3193517774560352333
+    second: GooSprites-01_10
+  - first:
+      213: -3313589534368583925
+    second: GooSprites-01_11
+  - first:
+      213: -2027750298134223823
+    second: GooSprites-01_12
+  - first:
+      213: -8961655361862456054
+    second: GooSprites-01_13
+  - first:
+      213: 1328892123701359658
+    second: GooSprites-01_14
+  - first:
+      213: 3709327086080348256
+    second: GooSprites-01_15
+  - first:
+      213: -7776834901751372493
+    second: GooSprites-01_16
+  - first:
+      213: -4330502113338166762
+    second: GooSprites-01_17
+  - first:
+      213: 6827491019449412060
+    second: GooSprites-01_18
+  - first:
+      213: 7629870896467956876
+    second: GooSprites-01_19
+  - first:
+      213: -6636141784661972327
+    second: GooSprites-01_20
+  - first:
+      213: 4548423443683384855
+    second: GooSprites-01_21
+  - first:
+      213: 6204344839571781254
+    second: GooSprites-01_22
+  - first:
+      213: 7900359284374717533
+    second: GooSprites-01_23
+  - first:
+      213: 3513671386117727546
+    second: GooSprites-01_24
+  - first:
+      213: -4061067115514228012
+    second: GooSprites-01_25
+  - first:
+      213: 5237227877915664977
+    second: GooSprites-01_26
+  - first:
+      213: -3737513438828584513
+    second: GooSprites-01_27
+  - first:
+      213: 4243812089603381314
+    second: GooSprites-01_28
+  - first:
+      213: -4800923471046723675
+    second: GooSprites-01_29
+  - first:
+      213: 2608279764327868867
+    second: GooSprites-01_30
+  - first:
+      213: -8291718041265016104
+    second: GooSprites-01_31
+  - first:
+      213: 5602367367365420432
+    second: GooSprites-01_32
+  - first:
+      213: 8061159269590594388
+    second: GooSprites-01_33
+  - first:
+      213: 3469171602785529657
+    second: GooSprites-01_34
+  - first:
+      213: -2233510139614294407
+    second: GooSprites-01_35
+  - first:
+      213: 3238422189818242153
+    second: GooSprites-01_36
+  - first:
+      213: -6412055474619144536
+    second: GooSprites-01_37
+  - first:
+      213: 7666550573121358986
+    second: GooSprites-01_38
+  - first:
+      213: -7599920282306161205
+    second: GooSprites-01_39
+  - first:
+      213: 7080145879371087031
+    second: GooSprites-01_40
+  - first:
+      213: -7391223098724504519
+    second: GooSprites-01_41
+  - first:
+      213: 4359637938227919230
+    second: GooSprites-01_42
+  - first:
+      213: 4136276069186026986
+    second: GooSprites-01_43
+  - first:
+      213: 5373251595813560181
+    second: GooSprites-01_44
+  - first:
+      213: -5879937065967976433
+    second: GooSprites-01_45
+  - first:
+      213: 2942771403491574628
+    second: GooSprites-01_46
+  - first:
+      213: -410423214550529617
+    second: GooSprites-01_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 146
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GooSprites-01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 437
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c5f2979e9fb1e20800000000000000
+      internalID: 3322523931271715973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_1
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 520
+        width: 147
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fe704e057e2fb00800000000000000
+      internalID: 861004813390311246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_2
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 520
+        width: 146
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ac825d4e21d1e00800000000000000
+      internalID: 1016989864893663750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_3
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 521
+        width: 147
+        height: 21
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004483c249531f920800000000000000
+      internalID: 3022255735455630336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_4
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 520
+        width: 147
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e870b757b5e05da10800000000000000
+      internalID: 1933467401001305998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_5
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 520
+        width: 146
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f287f3e1ccf465d40800000000000000
+      internalID: 5572729327016966191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_6
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 437
+        width: 105
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592e5a4a2f0bd2210800000000000000
+      internalID: 1309897622825591445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_7
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 479
+        width: 147
+        height: 22
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb639253f39815d0800000000000000
+      internalID: -3091558470918116372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_8
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 479
+        width: 146
+        height: 22
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6197504228d17cc40800000000000000
+      internalID: 5532423112035236118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_9
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 437
+        width: 147
+        height: 64
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dea801f5458ba6d0800000000000000
+      internalID: -2978140193132335406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_10
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 471
+        width: 147
+        height: 30
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48d098fe77a15c20800000000000000
+      internalID: 3193517774560352333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_11
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 479
+        width: 146
+        height: 22
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f2288efd3c302d0800000000000000
+      internalID: -3313589534368583925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 291
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134648ae8dbfbd3e0800000000000000
+      internalID: -2027750298134223823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_13
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 375
+        width: 147
+        height: 21
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0da6b4ededc1a380800000000000000
+      internalID: -8961655361862456054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_14
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 375
+        width: 146
+        height: 21
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24b802885c217210800000000000000
+      internalID: 1328892123701359658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_15
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 375
+        width: 147
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060dd89f45d2a7330800000000000000
+      internalID: 3709327086080348256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_16
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 375
+        width: 147
+        height: 21
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335ef3c3cd1231490800000000000000
+      internalID: -7776834901751372493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_17
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 375
+        width: 146
+        height: 21
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612766b9547f6e3c0800000000000000
+      internalID: -4330502113338166762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_18
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 291
+        width: 105
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9a37998ee10ce50800000000000000
+      internalID: 6827491019449412060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_19
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 333
+        width: 147
+        height: 22
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c845012d72fb2e960800000000000000
+      internalID: 7629870896467956876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_20
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 333
+        width: 146
+        height: 22
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99aa816e430b7e3a0800000000000000
+      internalID: -6636141784661972327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_21
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 291
+        width: 147
+        height: 64
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e9ec0060f3f1f30800000000000000
+      internalID: 4548423443683384855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_22
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 325
+        width: 147
+        height: 30
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68634b272c24a1650800000000000000
+      internalID: 6204344839571781254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_23
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 333
+        width: 146
+        height: 22
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d544d1749e6b3ad60800000000000000
+      internalID: 7900359284374717533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 146
+        width: 146
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35600b628113c030800000000000000
+      internalID: 3513671386117727546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_25
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 229
+        width: 147
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d211c299f034a7c0800000000000000
+      internalID: -4061067115514228012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_26
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 229
+        width: 146
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152afe6c10f5ea840800000000000000
+      internalID: 5237227877915664977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_27
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 229
+        width: 147
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1af5f545fa12cc0800000000000000
+      internalID: -3737513438828584513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_28
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 229
+        width: 147
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248515e5c9c05ea30800000000000000
+      internalID: 4243812089603381314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_29
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 229
+        width: 146
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7bc6a1a81bf5db0800000000000000
+      internalID: -4800923471046723675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_30
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 146
+        width: 105
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c92a9b50a8723420800000000000000
+      internalID: 2608279764327868867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_31
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 187
+        width: 147
+        height: 22
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d273b47f56edec80800000000000000
+      internalID: -8291718041265016104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_32
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 187
+        width: 146
+        height: 22
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0956e01207b9fbd40800000000000000
+      internalID: 5602367367365420432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_33
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 146
+        width: 147
+        height: 63
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4537bc555adfedf60800000000000000
+      internalID: 8061159269590594388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_34
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 179
+        width: 147
+        height: 30
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f67e83139f42030800000000000000
+      internalID: 3469171602785529657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_35
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 187
+        width: 146
+        height: 22
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e8e069c5af001e0800000000000000
+      internalID: -2233510139614294407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964ebd0e2df21fc20800000000000000
+      internalID: 3238422189818242153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_37
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 83
+        width: 147
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a62a33b48dc307a0800000000000000
+      internalID: -6412055474619144536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_38
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 83
+        width: 146
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c477b802f056a60800000000000000
+      internalID: 7666550573121358986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_39
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 83
+        width: 147
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5dad3f4c8a78690800000000000000
+      internalID: -7599920282306161205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_40
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 83
+        width: 147
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bcfbd14a2bb14260800000000000000
+      internalID: 7080145879371087031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_41
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 83
+        width: 146
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c2dd880c91d6990800000000000000
+      internalID: -7391223098724504519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_42
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 0
+        width: 105
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7934614b9b808c30800000000000000
+      internalID: 4359637938227919230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_43
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 41
+        width: 147
+        height: 22
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed38c48b21076930800000000000000
+      internalID: 4136276069186026986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_44
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 41
+        width: 146
+        height: 22
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f94419bdf919a40800000000000000
+      internalID: 5373251595813560181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_45
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 147
+        height: 63
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0083594464466ea0800000000000000
+      internalID: -5879937065967976433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_46
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 33
+        width: 147
+        height: 30
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4630b400003d6d820800000000000000
+      internalID: 2942771403491574628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_47
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 41
+        width: 146
+        height: 22
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa94429c242ed4af0800000000000000
+      internalID: -410423214550529617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

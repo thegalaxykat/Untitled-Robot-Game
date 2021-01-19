@@ -7,32 +7,44 @@ public class Pillar : MonoBehaviour{
     public GameObject Button;
     private ButtonCollison button_script;
 
-    private Animator animate;
+    private float distTraveled = 0f;
+    //where positive is up and negative is down
 
-    // Start is called before the first frame update
+    //private float distTraveledDown = 0f;
+    private float distLimitUp = 1f;
+    private float distLimitDown = 0f;
+
     void Start()
     {
         button_script = Button.GetComponent<ButtonCollison>();
-
-        animate = GetComponent<Animator>();
-        animate.SetBool("PillarUp", false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(button_script.buttonActivated == true){
-            Debug.Log("Button Pressed");
-
-            //make the pillar go up if the button is being pressed
-            animate.SetBool("PillarUp", true);
+        
+    //pillar up
+        if(button_script.buttonActivated == true 
+        && distTraveled < distLimitUp)
+        //&& distTraveledDown < distLimitDown)
+        {
+            transform.position += new Vector3(0, 2.5f * Time.deltaTime, 0);
+            //add the distance moved to distTravled
+            distTraveled += Time.deltaTime;
         }
 
-        if(button_script.buttonActivated == false){
-            Debug.Log("Button Not Pressed");
+    //pillar down
+        if(button_script.buttonActivated == false
+        && distTraveled > distLimitDown
+        && button_script.buttonBeenPressed == true)
+        {
+            transform.position += new Vector3(0, -2.5f * Time.deltaTime, 0);
+            //subtract the distance moved down from distTravled
+            distTraveled += -1 * Time.deltaTime;
+        }
 
-            //make the pillar go down if the button is not being pressed
-            animate.SetBool("PillarUp", false);
+        if(distTraveled == distLimitUp)
+        {
+            
         }
     }
 }

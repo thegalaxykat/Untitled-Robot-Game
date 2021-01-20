@@ -10,12 +10,12 @@ PrefabInstance:
     - target: {fileID: 1830287394072653313, guid: a4b130e942e32f34ba5a3b60704f9e20,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -13.47
       objectReference: {fileID: 0}
     - target: {fileID: 1830287394072653313, guid: a4b130e942e32f34ba5a3b60704f9e20,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 1830287394072653313, guid: a4b130e942e32f34ba5a3b60704f9e20,
         type: 3}
@@ -35,12 +35,12 @@ PrefabInstance:
     - target: {fileID: 1830287394072653313, guid: a4b130e942e32f34ba5a3b60704f9e20,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 1830287394072653313, guid: a4b130e942e32f34ba5a3b60704f9e20,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 1830287394072653313, guid: a4b130e942e32f34ba5a3b60704f9e20,
         type: 3}
@@ -60,12 +60,34 @@ PrefabInstance:
     - target: {fileID: 1830287394072653313, guid: a4b130e942e32f34ba5a3b60704f9e20,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830287394072653314, guid: a4b130e942e32f34ba5a3b60704f9e20,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830287394072653315, guid: a4b130e942e32f34ba5a3b60704f9e20,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830287394072653316, guid: a4b130e942e32f34ba5a3b60704f9e20,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1830287394072653319, guid: a4b130e942e32f34ba5a3b60704f9e20,
         type: 3}
       propertyPath: m_Name
-      value: GooCan
+      value: TipppedGooCan
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1830287394072653342, guid: a4b130e942e32f34ba5a3b60704f9e20,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1830287394072653342, guid: a4b130e942e32f34ba5a3b60704f9e20, type: 3}
+    - {fileID: 1830287394072653316, guid: a4b130e942e32f34ba5a3b60704f9e20, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a4b130e942e32f34ba5a3b60704f9e20, type: 3}

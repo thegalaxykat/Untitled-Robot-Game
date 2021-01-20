@@ -21,7 +21,6 @@ public class CharacterMovement : MonoBehaviour{
     private Animator animate;
 
     public GameObject can;
-    private Vector3 tRight;
 
     // Start is called before the first frame update
     void Start()
@@ -29,16 +28,11 @@ public class CharacterMovement : MonoBehaviour{
         rb = GetComponent<Rigidbody2D>();
         animate = GetComponent<Animator>();
         facingRight = true;
-        tRight.x = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Q)){
-            Instantiate(can, new Vector3(transform.position.x + tRight.x,transform.position.y, transform.position.z), Quaternion.identity);
-            
-        }
        
        //move left and right
             move = Input.GetAxis("Horizontal");

@@ -6,6 +6,7 @@ public class PickUpObject : MonoBehaviour
 {
     public GameObject robot;
     public bool objectPickedUp;
+    public bool canTip;
 
     // offset transform distances from robot
     private Vector3 aboveHead; 
@@ -27,27 +28,30 @@ public class PickUpObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if the object has been picked up (objectPickedUp = true) then put it on the robot's head
+        //if the object has been picked up then put it on the robot's head
         if (objectPickedUp == true){
             transform.position = robot.transform.position + aboveHead;
 
         }
-        //Press key to release object
+        //Press key to release and put down object
         if (Input.GetKeyUp(KeyCode.W) && objectPickedUp == true){ 
             objectPickedUp = false;
             //enable rigidbody
             rb.isKinematic = false;
             PlaceObject();
+            //if the object is a can, this is where it would tip
+            canTip = true;
         }
     }
     
     //if the character hits the trigger and presses the "pick up" key then the bool objectPickedUp is set to true
-    private void OnTriggerStay2D(Collider2D collisionPartner){
+   void OnTriggerStay2D(Collider2D collisionPartner)
+   {
         if (Input.GetKeyDown(KeyCode.W) && collisionPartner.gameObject.GetComponent<CharacterMovement>() != null && objectPickedUp == false){ 
         
         //test to see it the object that it collided with has the charactermovement script, if it does, then it must be the character
         objectPickedUp = true;
-        //disable rigidbody
+        //disable rigidbody and colliders
         rb.isKinematic = true;
         }
     }

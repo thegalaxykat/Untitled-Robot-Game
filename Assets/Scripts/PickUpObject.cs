@@ -15,6 +15,11 @@ public class PickUpObject : MonoBehaviour
    
     Rigidbody2D rb;
 
+    float distance;
+    float closestDist;
+    float pickUpDistance;
+    GameObject closestObj;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +28,9 @@ public class PickUpObject : MonoBehaviour
         translateLeft.x = -1.1f;
 
         rb = GetComponent<Rigidbody2D>();
+
+        // set closest distance to some arbitrary giant number initially 
+        closestDist = 10000;
     }
 
     // Update is called once per frame
@@ -36,23 +44,41 @@ public class PickUpObject : MonoBehaviour
         //Press key to release and put down object
         if (Input.GetKeyUp(KeyCode.W) && objectPickedUp == true){ 
             objectPickedUp = false;
-            //enable rigidbody
-            rb.isKinematic = false;
+            rb.isKinematic = false; //enable rigidbody
+
             PlaceObject();
             //if the object is a can, this is where it would tip
             canTip = true;
         }
     }
     
-    //if the character hits the trigger and presses the "pick up" key then the bool objectPickedUp is set to true
+
    void OnTriggerStay2D(Collider2D collisionPartner)
    {
-        if (Input.GetKeyDown(KeyCode.W) && collisionPartner.gameObject.GetComponent<CharacterMovement>() != null && objectPickedUp == false){ 
-        
-        //test to see it the object that it collided with has the charactermovement script, if it does, then it must be the character
-        objectPickedUp = true;
-        //disable rigidbody and colliders
-        rb.isKinematic = true;
+        //if the object collides with the character and the character isn't holding anything
+        if (collisionPartner.gameObject.GetComponent<CharacterMovement>() != null && objectPickedUp == false)
+        {
+            //get the distance of the object from the player
+            distance = Vector3.Distance(collisionPartner.transform.position, gameObject.transform.position);
+            //Debug.Log("Distance between robot and object is: " + distance);
+
+            if (distance < closestDist)
+            {
+                //set new closest object
+                closestObj = gameObject;
+                closestDist = distance;
+                //Debug.Log("closest object detected is: " + gameObject);
+
+            }
+            // if W is pressed and the object is the closest to the player then pick it up
+            if (Input.GetKeyDown(KeyCode.W)
+            && gameObject == closestObj)
+            {
+                Debug.Log("trying to pick up " + gameObject);
+                objectPickedUp = true;
+                rb.isKinematic = true; //disable rigidbody and colliders
+            }
+
         }
     }
 

@@ -22,6 +22,7 @@ public class CanBehaviour : MonoBehaviour
         if (pickUpScript.canTip == true)
         {
 
+            Debug.Log("can should be tipping");
         //delete the first can and instantiate the tipped can in the same place
 
         //Instantiate(TippedGoocan, new Vector3(transform.position.x + tRight.x,transform.position.y, transform.position.z), Quaternion.identity);

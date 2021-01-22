@@ -26,9 +26,14 @@ If the player tries to pick something up and is in range, it triggers objectPick
 
     void Update()
     {
+        PutDown();
+    }
+
+    void PutDown()
+    {
         //put down
          if (Input.GetKeyUp(KeyCode.W)
-         && PickedUpObj.GetComponent<PickUpObject>().objectPickedUp == true)
+         && (PickedUpObj?.GetComponent<PickUpObject>()?.objectPickedUp ?? false))
          {
             //trigger the put down method on the object
             PickedUpObj.GetComponent<PickUpObject>().Place();

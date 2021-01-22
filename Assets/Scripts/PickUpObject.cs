@@ -38,13 +38,6 @@ This script handles the details of placement and sets RobotPickUpObject RobotOcc
         {
             PickUp();
         }
-
-        //Put down object
-        if (Input.GetKeyUp(KeyCode.W) && objectPickedUp == true)
-        {     
-            Place();
-            canTip = true; //if the object is a can, this is where it would tip
-        }
     }
     
     public void PickUp()
@@ -54,13 +47,13 @@ This script handles the details of placement and sets RobotPickUpObject RobotOcc
     }
    
 
-    private void Place()
+    public void Place()
     {
         objectPickedUp = false; //duh
         rb.isKinematic = false; //enable rigidbody
 
         //set RobotOccupied to false in RobotPickUpObject
-        robot.GetComponent<RobotPickUpObject>().RobotOccupied = false;
+        robot.GetComponent<RobotPickUpObject>().PickedUpObj = null;
 
         //if robot facing right then drop to the right
         if(robot.GetComponent<CharacterMovement>().facingRight == true){

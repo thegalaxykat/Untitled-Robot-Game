@@ -12,27 +12,53 @@ public class CanBehaviour : MonoBehaviour
     private PickUpObject pickUpScript;
 
     public Transform tippedCan;
+    
+    public LayerMask ground; //* might not need this
+
+    public bool canCanTip;
 
     void Start()
     {
-       pickUpScript = GetComponent<PickUpObject>();
+        pickUpScript = GetComponent<PickUpObject>();
+        canCanTip = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (pickUpScript.canTip == true)
+        if (Input.GetKeyUp(KeyCode.E))
         {
-
-            ////Debug.Log("can tipping");
-
-            //TODO delete the first can and instantiate the tipped can in the same place
-
-            Instantiate(tippedCan, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-
-            //TODO instatiate goo
-
+            //drop the can
+            GetComponent<PickUpObject>().Place();
+  
+            //at this point the can can be tipped when it hits the ground
+            canCanTip = true;
         }
-
     }
+
+    void OnTriggerEnter2D(Collider2D collisionPartner)
+    {
+        //detect if collison with ground by checking layer tag (ground is 8)
+        //if it hits the ground and the can can tip, it will (or, at least, it should)
+        if (collisionPartner.gameObject.layer == 8
+        && canCanTip == true)
+        {
+            TipCan();
+        }      
+    }
+
+	void TipCan()
+	{
+        //at this point the can has been released and hit the ground
+
+		//instantiate tipped can
+		Instantiate(tippedCan, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+
+
+        //TODO delete the first can and instantiate the tipped can in the same place
+
+
+
+        //TODO instatiate goo
+
+	}
 }

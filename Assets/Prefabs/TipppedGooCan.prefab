@@ -82,6 +82,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TipppedGooCan
       objectReference: {fileID: 0}
+    - target: {fileID: 1830287394072653319, guid: a4b130e942e32f34ba5a3b60704f9e20,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1830287394072653342, guid: a4b130e942e32f34ba5a3b60704f9e20,
         type: 3}
       propertyPath: m_Enabled

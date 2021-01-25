@@ -63,7 +63,5 @@ This script handles the details of placement and sets RobotPickUpObject RobotOcc
         if(robot.GetComponent<CharacterMovement>().facingRight == false){
             transform.position = robot.transform.position + translateLeft;
         }
-
-        canTip = true;
     }
 }

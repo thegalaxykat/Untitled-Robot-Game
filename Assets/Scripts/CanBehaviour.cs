@@ -10,12 +10,10 @@ When the can is realeased by the player and hits the ground the first time game 
 public class CanBehaviour : MonoBehaviour
 {
     private PickUpObject pickUpScript;
-
     public Transform tippedCan;
-    
-    public LayerMask ground; //* might not need this
-
     public bool canCanTip;
+
+    private GameObject robot;
 
     void Start()
     {
@@ -28,7 +26,7 @@ public class CanBehaviour : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.E))
         {
             //drop the can
-            GetComponent<PickUpObject>().Place();
+            pickUpScript.Place();
   
             //at this point the can can be tipped when it hits the ground
             canCanTip = true;
@@ -47,18 +45,21 @@ public class CanBehaviour : MonoBehaviour
     }
 
 	void TipCan()
-	{
-        //at this point the can has been released and hit the ground
+	{//at this point the can has been released and hit the ground
 
-		//instantiate tipped can
-		Instantiate(tippedCan, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+		//instantiate tipped can (right)
+		if (pickUpScript.tipRight == true)
+        {
+            Instantiate(tippedCan, new Vector3(transform.position.x + .2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 270));
+        }
+        else
+        {
+            Instantiate(tippedCan, new Vector3(transform.position.x + -.2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 90));            
+        }
 
+        //delete the first can
+        Destroy (gameObject);
 
-        //TODO delete the first can and instantiate the tipped can in the same place
-
-
-
-        //TODO instatiate goo
-
+        //TODO instatiate goo (probably in a separite script attached to the tipped can)
 	}
 }

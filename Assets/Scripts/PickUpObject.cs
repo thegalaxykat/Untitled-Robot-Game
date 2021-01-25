@@ -20,6 +20,8 @@ This script handles the details of placement and sets RobotPickUpObject RobotOcc
     private Vector3 translateRight;
     private Vector3 translateLeft;
    
+    public bool tipRight;
+
     Rigidbody2D rb;
 
     void Start()
@@ -58,10 +60,12 @@ This script handles the details of placement and sets RobotPickUpObject RobotOcc
         //if robot facing right then drop to the right
         if(robot.GetComponent<CharacterMovement>().facingRight == true){
             transform.position = robot.transform.position + translateRight;
+            tipRight = true;
         }
        //if robot facing left then drop to the left
         if(robot.GetComponent<CharacterMovement>().facingRight == false){
             transform.position = robot.transform.position + translateLeft;
+            tipRight = false;
         }
     }
 }

@@ -11,6 +11,8 @@ public class CanBehaviour : MonoBehaviour
 {
     private PickUpObject pickUpScript;
 
+    public Transform tippedCan;
+
     void Start()
     {
        pickUpScript = GetComponent<PickUpObject>();
@@ -22,10 +24,13 @@ public class CanBehaviour : MonoBehaviour
         if (pickUpScript.canTip == true)
         {
 
-            Debug.Log("can should be tipping");
-        //delete the first can and instantiate the tipped can in the same place
+            ////Debug.Log("can tipping");
 
-        //Instantiate(TippedGoocan, new Vector3(transform.position.x + tRight.x,transform.position.y, transform.position.z), Quaternion.identity);
+            //TODO delete the first can and instantiate the tipped can in the same place
+
+            Instantiate(tippedCan, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+
+            //TODO instatiate goo
 
         }
 

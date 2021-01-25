@@ -172,6 +172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e86564c3b05d56247889ebe0169e1872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tippedCan: {fileID: 8950335390034130144, guid: 8b0d18bd366dc8d43b867c884ec9de18,
+    type: 3}
 --- !u!114 &1830287394072653342
 MonoBehaviour:
   m_ObjectHideFlags: 0

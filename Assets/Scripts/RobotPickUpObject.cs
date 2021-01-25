@@ -12,6 +12,7 @@ If the player tries to pick something up and is in range, it triggers objectPick
 */
 
     public GameObject PickedUpObj; //the game object the robot is holding (if nothing then null)
+    public GameObject thingToPickUp;
 
     float distance;
     float closestDist;
@@ -22,25 +23,34 @@ If the player tries to pick something up and is in range, it triggers objectPick
     {
         closestDist = 10000; //set closest distance to some arbitrary giant number initially 
         PickedUpObj = null;
+        thingToPickUp = null;
     }
 
     void Update()
     {
-        PutDown();
+        UpOrDown();
     }
 
-    void PutDown()
-    {
-        //put down
-         if (Input.GetKeyUp(KeyCode.W)
-         && (PickedUpObj?.GetComponent<PickUpObject>()?.objectPickedUp ?? false))
-         {
-            //trigger the put down method on the object
-            PickedUpObj.GetComponent<PickUpObject>().Place();
-         }
-    }
+	void UpOrDown()
+	{
+		if (Input.GetKeyUp(KeyCode.W))
+		{
+			if (PickedUpObj != null)
+			//if holding something put down
+			{
+                //trigger the put down method on the object
+                PickedUpObj.GetComponent<PickUpObject>().Place();
+			}
+			else //if holding nothing then pick up
+            {
+                //trigger pickup
+                PickedUpObj = thingToPickUp;
+                PickedUpObj.GetComponent<PickUpObject>().objectPickedUp = true;
+            }
+		}
+	}
 
-    void OnTriggerStay2D(Collider2D collisionPartner) //where collisonPartner is the object the robot collides with
+    void OnTriggerStay2D(Collider2D collisionPartner) //distance calculations
    {
         //if the robot collides with the object and isn't currently holding something
         if (collisionPartner.gameObject.GetComponent<PickUpObject>() != null
@@ -48,27 +58,21 @@ If the player tries to pick something up and is in range, it triggers objectPick
         {
             //store the distance of the object from the player in distance
             distance = Vector3.Distance(collisionPartner.transform.position, gameObject.transform.position);
-            ////Debug.Log("Distance between the object and robot is: " + distance);
 
-            if (distance < closestDist) //might have to try a list here if it doesn't work
+            if (distance < closestDist)
             {
-                //set new closest object
-                closestObj = collisionPartner.gameObject;
+                closestObj = collisionPartner.gameObject; //set new closest object
                 closestDist = distance;
-                ////Debug.Log("closest object detected is: " + collisionPartner.gameObject);
             }
 
-        //pickup (if W is pressed and the object is the closest to the player)
-            if (Input.GetKeyDown(KeyCode.W) 
-            && collisionPartner.gameObject == closestObj)
+            //if the object collided with is the closest object it becomes the thing to pick up
+            if (collisionPartner.gameObject == closestObj) 
             {
-                PickedUpObj = collisionPartner.gameObject;
-
-            //set the collision Partner's objectPickedUp bool to true (which picks up the object)
-            collisionPartner.GetComponent<PickUpObject>().objectPickedUp = true;
+                thingToPickUp = collisionPartner.gameObject;
             }
         }
     }
+
     void OnTriggerExit2D(Collider2D collisionPartner) //when leaving the object's collider the closest obj and dist are reset
     {
         closestObj = null;

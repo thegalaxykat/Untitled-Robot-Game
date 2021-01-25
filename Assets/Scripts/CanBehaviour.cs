@@ -44,6 +44,8 @@ public class CanBehaviour : MonoBehaviour
         }      
     }
 
+
+    //tippy-over bit
 	void TipCan()
 	{//at this point the can has been released and hit the ground
 
@@ -60,6 +62,7 @@ public class CanBehaviour : MonoBehaviour
         //delete the first can
         Destroy (gameObject);
 
-        //TODO instatiate goo (probably in a separite script attached to the tipped can)
+        //TODO instatiate goo (probably in a separite script attached to the tipped can) but thats a later thing
+
 	}
 }

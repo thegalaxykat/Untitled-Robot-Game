@@ -217,3 +217,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a21ddb99043b744bced25c63b0dd5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PickedUpObj: {fileID: 0}
+  thingToPickUp: {fileID: 0}

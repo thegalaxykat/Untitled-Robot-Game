@@ -174,6 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tippedCan: {fileID: 8950335390034130144, guid: 8b0d18bd366dc8d43b867c884ec9de18,
     type: 3}
+  canCanTip: 0
 --- !u!114 &1830287394072653342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,6 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62957315526f92f4d99d604670ac4da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  robot: {fileID: 0}
+  robot: {fileID: 2198477509414455733, guid: b1024e6dc11654b45a9fd9871703883c, type: 3}
   objectPickedUp: 0
   canTip: 0
+  tipRight: 0

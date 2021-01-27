@@ -44,25 +44,28 @@ public class CanBehaviour : MonoBehaviour
         }      
     }
 
-
     //tippy-over bit
 	void TipCan()
 	{//at this point the can has been released and hit the ground
 
-		//instantiate tipped can (right)
+		//instantiate tipped can (RIGHT)
 		if (pickUpScript.tipRight == true)
         {
             Instantiate(tippedCan, new Vector3(transform.position.x + .2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 270));
+
+            //goo will spill right
+            tippedCan.GetComponent<GooSpill>().spillRight = true;
         }
         else
+		//instantiate tipped can (LEFT)
         {
-            Instantiate(tippedCan, new Vector3(transform.position.x + -.2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 90));            
+            Instantiate(tippedCan, new Vector3(transform.position.x + -.2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 90));      
+           
+            //goo will spill left
+            tippedCan.GetComponent<GooSpill>().spillRight = false;      
         }
 
         //delete the first can
         Destroy (gameObject);
-
-        //TODO instatiate goo (probably in a separite script attached to the tipped can) but thats a later thing
-
 	}
 }

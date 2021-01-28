@@ -76,6 +76,7 @@ If the player tries to pick something up and is in range, it triggers objectPick
     void OnTriggerExit2D(Collider2D collisionPartner) //when leaving the object's collider the closest obj and dist are reset
     {
         closestObj = null;
+        thingToPickUp = null;
         closestDist = 10000;
     }
 }

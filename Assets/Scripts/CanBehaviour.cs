@@ -23,7 +23,8 @@ public class CanBehaviour : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.E))
+        if (Input.GetKeyUp(KeyCode.E)
+        && pickUpScript.objectPickedUp == true)
         {
             //drop the can
             pickUpScript.Place();
@@ -64,6 +65,8 @@ public class CanBehaviour : MonoBehaviour
             //goo will spill left
             tippedCan.GetComponent<GooSpill>().spillRight = false;      
         }
+
+        //TODO recalculate closest obj
 
         //delete the first can
         Destroy (gameObject);

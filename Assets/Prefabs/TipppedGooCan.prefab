@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goo: {fileID: 6339118428320776148, guid: 4494ce8caac408d4fbaf72ef0c44d8fa, type: 3}
+  spillRight: 0
 --- !u!1001 &7301326952202509025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78,7 +79,7 @@ PrefabInstance:
     - target: {fileID: 1830287394072653314, guid: a4b130e942e32f34ba5a3b60704f9e20,
         type: 3}
       propertyPath: m_BodyType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1830287394072653315, guid: a4b130e942e32f34ba5a3b60704f9e20,
         type: 3}
@@ -86,6 +87,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1830287394072653316, guid: a4b130e942e32f34ba5a3b60704f9e20,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830287394072653317, guid: a4b130e942e32f34ba5a3b60704f9e20,
         type: 3}
       propertyPath: m_Enabled
       value: 0

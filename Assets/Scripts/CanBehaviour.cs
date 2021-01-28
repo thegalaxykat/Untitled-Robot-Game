@@ -53,17 +53,11 @@ public class CanBehaviour : MonoBehaviour
 		if (pickUpScript.tipRight == true)
         {
             Instantiate(tippedCan, new Vector3(transform.position.x + .2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 270));
-
-            //goo will spill right
-            tippedCan.GetComponent<GooSpill>().spillRight = true;
         }
         else
 		//instantiate tipped can (LEFT)
         {
             Instantiate(tippedCan, new Vector3(transform.position.x + -.2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 90));      
-           
-            //goo will spill left
-            tippedCan.GetComponent<GooSpill>().spillRight = false;      
         }
 
         //TODO recalculate closest obj

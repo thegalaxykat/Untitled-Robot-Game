@@ -8,7 +8,6 @@ public class GooSpill : MonoBehaviour
 //this script is attached to the tipped can
 
 public GameObject goo;
-public bool spillRight;
 
     void Start()
     {
@@ -23,13 +22,12 @@ public bool spillRight;
     void Spill()
     //yep, this is the spilly bit!
     {
-        if (spillRight == true) //direction specific
+        if (CharacterMovement.current.facingRight == true) //direction specific
         {
             //to the right
             Instantiate(goo, new Vector3(transform.position.x + 1.7f, transform.position.y - .36f, transform.position.z), Quaternion.identity);
         }
         else
-
 		{
 			//to the left
 			Instantiate(goo, new Vector3(transform.position.x - .4f, transform.position.y - .36f, transform.position.z), Quaternion.identity);
@@ -37,10 +35,13 @@ public bool spillRight;
 
 		//TODO: if the goo is on a platform it will fall down to the ground below (not float in air) for anything spilled beyond the edge of the platform
 
+        //Debug.Log(CharacterMovement.current.facingRight);
+        
+
 	}
 
 	void Reset()
-	//if you try to pick up the can it deletes the can as well as the goo it created
+	//TODO if you try to pick up the can it deletes the can as well as the goo it created
 	{
 
 	}

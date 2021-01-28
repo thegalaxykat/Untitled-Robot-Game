@@ -50,7 +50,7 @@ If the player tries to pick something up and is in range, it triggers objectPick
 		}
 	}
 
-    void OnTriggerStay2D(Collider2D collisionPartner) //distance calculations
+    public void OnTriggerStay2D(Collider2D collisionPartner) //distance calculations
    {
         //if the robot collides with the object and isn't currently holding something
         if (collisionPartner.gameObject.GetComponent<PickUpObject>() != null

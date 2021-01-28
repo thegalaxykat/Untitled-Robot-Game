@@ -12,7 +12,7 @@ This script handles the details of placement and sets RobotPickUpObject RobotOcc
 */
 
     public GameObject robot;
-    public bool objectPickedUp;
+    public bool objectPickedUp; //if this specific obj is being held
     public bool canTip;
 
     // offset transform distances from robot

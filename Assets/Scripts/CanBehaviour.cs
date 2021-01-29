@@ -60,8 +60,6 @@ public class CanBehaviour : MonoBehaviour
             Instantiate(tippedCan, new Vector3(transform.position.x + -.2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 90));      
         }
 
-        //TODO recalculate closest obj
-
         //delete the first can
         Destroy (gameObject);
 	}

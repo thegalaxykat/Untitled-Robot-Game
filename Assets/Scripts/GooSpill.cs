@@ -33,11 +33,8 @@ public GameObject goo;
 			Instantiate(goo, new Vector3(transform.position.x - .4f, transform.position.y - .36f, transform.position.z), Quaternion.identity);
 		}
 
-		//TODO: if the goo is on a platform it will fall down to the ground below (not float in air) for anything spilled beyond the edge of the platform
-
-        //Debug.Log(CharacterMovement.current.facingRight);
+		//TODO: goo spreads out on level ground (if it hits a ledge or a change in height it just stops) 
         
-
 	}
 
 	void Reset()

@@ -6,8 +6,10 @@ public class ButtonCollison : MonoBehaviour{
 
     private Animator animate;
 
-    public bool buttonActivated;
-    public bool buttonBeenPressed;
+    public bool buttonActivated; //true the entire time the button is being pressed
+    public bool buttonBeenPressed; //the very first time the button is pressed
+
+    
 
     void Start()
     {

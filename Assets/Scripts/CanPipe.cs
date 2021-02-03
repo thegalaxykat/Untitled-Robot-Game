@@ -43,7 +43,7 @@ private bool previousCanDeleted;
 
     void DropCan()
     {   //instantiate a can
-        GameObject pipeCan = Instantiate(gooCan, new Vector3(transform.position.x, transform.position.y , transform.position.z), Quaternion.identity);
+        Instantiate(gooCan, new Vector3(transform.position.x, transform.position.y , transform.position.z), Quaternion.identity);
 
         //there is currently a can
         previousCanDeleted = false;
@@ -55,7 +55,7 @@ private bool previousCanDeleted;
     void DeleteCan()
     {
         //TODO delete the last can the pipe instantiated
-        Destroy(pipeCan);
+        //Destroy();
 
         //there is no longer a can
         previousCanDeleted = true;

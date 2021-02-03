@@ -11,7 +11,9 @@ private ButtonCollison button_script;
 public GameObject gooCan; //which type of goo can
 public GameObject button; //which button triggers it
 
-public bool dropStart; // if you want a can to drop when the level starts
+private GameObject pipeCan;
+
+public bool dropStart; // if you want a can to drop when the level 
 private bool previousCanDeleted;
 
     void Start()
@@ -43,7 +45,7 @@ private bool previousCanDeleted;
 
     void DropCan()
     {   //instantiate a can
-        Instantiate(gooCan, new Vector3(transform.position.x, transform.position.y , transform.position.z), Quaternion.identity);
+        pipeCan = Instantiate(gooCan, new Vector3(transform.position.x, transform.position.y , transform.position.z), Quaternion.identity);
 
         //there is currently a can
         previousCanDeleted = false;
@@ -54,13 +56,10 @@ private bool previousCanDeleted;
 
     void DeleteCan()
     {
-        //TODO delete the last can the pipe instantiated
-        //Destroy();
+        Destroy(pipeCan);
 
         //there is no longer a can
         previousCanDeleted = true;
-
-        Debug.Log("can deleted");
     }
 }
 

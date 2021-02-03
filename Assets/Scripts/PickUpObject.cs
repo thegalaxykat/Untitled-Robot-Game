@@ -51,7 +51,7 @@ This script handles the details of placement and sets RobotPickUpObject RobotOcc
 
     public void Place()
     {
-        objectPickedUp = false; //duh
+        objectPickedUp = false;
         rb.isKinematic = false; //enable rigidbody
 
         //set RobotOccupied to false in RobotPickUpObject

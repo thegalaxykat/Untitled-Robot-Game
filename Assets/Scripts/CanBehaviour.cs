@@ -13,7 +13,13 @@ public class CanBehaviour : MonoBehaviour
     public Transform tippedCan;
     public bool canCanTip;
 
-    private GameObject robot;
+    public GameObject robot;
+
+    void Awake()
+    {
+        //!set the robot game obj to the instantiated robot in the *current scene*
+        ////robot = GameObject.FindWithTag("Player");
+    }
 
     void Start()
     {

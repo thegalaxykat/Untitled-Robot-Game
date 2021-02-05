@@ -31,6 +31,8 @@ This script handles the details of placement and sets RobotPickUpObject RobotOcc
         translateLeft.x = -1.1f;
 
         rb = GetComponent<Rigidbody2D>();
+
+        robot = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()

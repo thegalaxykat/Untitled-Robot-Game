@@ -112823,22 +112823,6 @@ PrefabInstance:
       propertyPath: button
       value: 
       objectReference: {fileID: 27696239}
-    - target: {fileID: 1315689020910934291, guid: 3efa014ef8429ca4aac84e35adaff007,
-        type: 3}
-      propertyPath: dropStart
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1315689020910934291, guid: 3efa014ef8429ca4aac84e35adaff007,
-        type: 3}
-      propertyPath: gooCan
-      value: 
-      objectReference: {fileID: 6660489708298076732, guid: 6c3dbf61a64e04f438905ae7b209bf7d,
-        type: 3}
-    - target: {fileID: 3582877942669590945, guid: 3efa014ef8429ca4aac84e35adaff007,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3efa014ef8429ca4aac84e35adaff007, type: 3}
 --- !u!1001 &702367912719586861

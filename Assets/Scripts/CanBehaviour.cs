@@ -10,7 +10,7 @@ When the can is realeased by the player and hits the ground the first time game 
 public class CanBehaviour : MonoBehaviour
 {
     private PickUpObject pickUpScript;
-    public Transform tippedCan;
+    public Transform TippedCan;
     public bool canCanTip;
 
     public GameObject robot;
@@ -58,12 +58,12 @@ public class CanBehaviour : MonoBehaviour
 		//instantiate tipped can (RIGHT)
 		if (pickUpScript.tipRight == true)
         {
-            Instantiate(tippedCan, new Vector3(transform.position.x + .2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 270));
+            Instantiate(TippedCan, new Vector3(transform.position.x + .2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 270));
         }
         else
 		//instantiate tipped can (LEFT)
         {
-            Instantiate(tippedCan, new Vector3(transform.position.x + -.2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 90));      
+            Instantiate(TippedCan, new Vector3(transform.position.x + -.2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 90));      
         }
 
         //delete the first can

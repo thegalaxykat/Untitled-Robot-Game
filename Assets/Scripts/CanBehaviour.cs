@@ -18,7 +18,7 @@ public class CanBehaviour : MonoBehaviour
     void Awake()
     {
         //!set the robot game obj to the instantiated robot in the *current scene*
-        ////robot = GameObject.FindWithTag("Player");
+        robot = GameObject.FindWithTag("Player");
     }
 
     void Start()

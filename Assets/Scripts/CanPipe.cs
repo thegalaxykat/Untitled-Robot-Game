@@ -49,10 +49,6 @@ private bool previousCanDeleted;
 
         //there is currently a can
         previousCanDeleted = false;
-
-        //! set the robot game object to the robot in the scene
-        ////pipeCan.GetComponent<CanBehaviour>().robot = GameObject.FindWithTag("Player");
-
     }
 
     void DeleteCan()

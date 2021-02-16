@@ -47,7 +47,8 @@ This script handles the details of placement and sets RobotPickUpObject RobotOcc
     public void PickUp()
     {
         transform.position = robot.transform.position + aboveHead; //transform above head
-        rb.isKinematic = true; //disable rigidbody
+        rb.isKinematic = true; //disable rigidbody (make it kinematic)
+        rb.simulated = false; //disable simulation
     }
    
 
@@ -55,6 +56,7 @@ This script handles the details of placement and sets RobotPickUpObject RobotOcc
     {
         objectPickedUp = false;
         rb.isKinematic = false; //enable rigidbody
+        rb.simulated = true; //enable simulation
 
         //set RobotOccupied to false in RobotPickUpObject
         robot.GetComponent<RobotPickUpObject>().PickedUpObj = null;

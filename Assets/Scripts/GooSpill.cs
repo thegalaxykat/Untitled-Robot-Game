@@ -31,10 +31,7 @@ public GameObject goo;
 		{
 			//to the left
 			Instantiate(goo, new Vector3(transform.position.x - .4f, transform.position.y - .36f, transform.position.z), Quaternion.identity);
-		}
-
-		//TODO: goo spreads out on level ground (if it hits a ledge or a change in height it just stops) 
-        
+		}        
 	}
 
 	void Reset()

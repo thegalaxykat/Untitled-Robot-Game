@@ -16,7 +16,7 @@ TextureImporter:
     second: GooSprites-01_3
   - first:
       213: 1933467401001305998
-    second: GooSprites-01_4
+    second: DefaultGreenGooSprite
   - first:
       213: 5572729327016966191
     second: GooSprites-01_5
@@ -52,7 +52,7 @@ TextureImporter:
     second: GooSprites-01_15
   - first:
       213: -7776834901751372493
-    second: GooSprites-01_16
+    second: DefaultBlueGooSprite
   - first:
       213: -4330502113338166762
     second: GooSprites-01_17
@@ -88,7 +88,7 @@ TextureImporter:
     second: GooSprites-01_27
   - first:
       213: 4243812089603381314
-    second: GooSprites-01_28
+    second: DefaultRedGooSprite
   - first:
       213: -4800923471046723675
     second: GooSprites-01_29
@@ -124,7 +124,7 @@ TextureImporter:
     second: GooSprites-01_39
   - first:
       213: 7080145879371087031
-    second: GooSprites-01_40
+    second: DefaultYellowGooSprite
   - first:
       213: -7391223098724504519
     second: GooSprites-01_41
@@ -146,6 +146,9 @@ TextureImporter:
   - first:
       213: -410423214550529617
     second: GooSprites-01_47
+  - first:
+      213: -5486407892925658023
+    second: GooSprites-01_48
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -315,7 +318,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GooSprites-01_4
+      name: DefaultGreenGooSprite
       rect:
         serializedVersion: 2
         x: 687
@@ -567,7 +570,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GooSprites-01_16
+      name: DefaultBlueGooSprite
       rect:
         serializedVersion: 2
         x: 687
@@ -819,7 +822,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GooSprites-01_28
+      name: DefaultRedGooSprite
       rect:
         serializedVersion: 2
         x: 687
@@ -1071,7 +1074,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GooSprites-01_40
+      name: DefaultYellowGooSprite
       rect:
         serializedVersion: 2
         x: 687
@@ -1234,6 +1237,27 @@ TextureImporter:
       bones: []
       spriteID: fa94429c242ed4af0800000000000000
       internalID: -410423214550529617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooSprites-01_48
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 498
+        width: 2
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c4441f61d5cd3b0800000000000000
+      internalID: -5486407892925658023
       vertices: []
       indices: 
       edges: []

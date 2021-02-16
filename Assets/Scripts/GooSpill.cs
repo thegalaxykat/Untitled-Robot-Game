@@ -8,6 +8,7 @@ public class GooSpill : MonoBehaviour
 //this script is attached to the tipped can
 
 public GameObject goo;
+public GameObject createdGoo;
 
     void Start()
     {
@@ -25,17 +26,17 @@ public GameObject goo;
         if (CharacterMovement.current.facingRight == true) //direction specific
         {
             //to the right
-            Instantiate(goo, new Vector3(transform.position.x + 1.7f, transform.position.y - .36f, transform.position.z), Quaternion.identity);
+            createdGoo = Instantiate(goo, new Vector3(transform.position.x, transform.position.y - .36f, transform.position.z), Quaternion.Euler(0, 180, 0));
         }
         else
 		{
 			//to the left
-			Instantiate(goo, new Vector3(transform.position.x - .4f, transform.position.y - .36f, transform.position.z), Quaternion.identity);
+			createdGoo = Instantiate(goo, new Vector3(transform.position.x - .4f, transform.position.y - .36f, transform.position.z), Quaternion.identity);
 		}        
 	}
 
 	void Reset()
-	//TODO if you try to pick up the can it deletes the can as well as the goo it created
+	//TODO if you try to pick up the can it deletes the can as well as the goo it created (createdGoo)
 	{
 
 	}

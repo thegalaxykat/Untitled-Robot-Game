@@ -58,5 +58,11 @@ private bool previousCanDeleted;
         //there is no longer a can
         previousCanDeleted = true;
     }
+
+    //TODO- delete tipped cans & respective goo when button pressed
+    void Reset() // delete tipped goo can and respective goo
+    {
+        
+    }
 }
 

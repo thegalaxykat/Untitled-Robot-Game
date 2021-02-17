@@ -172,9 +172,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e86564c3b05d56247889ebe0169e1872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TippedCan: {fileID: 8001714200507462851, guid: 5ce1f8dd9b4c0d84b94f52fc862ea1b9,
+  TippedCan: {fileID: 8001714200507462858, guid: 5ce1f8dd9b4c0d84b94f52fc862ea1b9,
     type: 3}
   canCanTip: 0
+  createdCan: {fileID: 0}
   robot: {fileID: 0}
 --- !u!114 &6660489708298076735
 MonoBehaviour:

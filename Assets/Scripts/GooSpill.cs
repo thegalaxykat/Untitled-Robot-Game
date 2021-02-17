@@ -34,11 +34,4 @@ public GameObject createdGoo;
 			createdGoo = Instantiate(goo, new Vector3(transform.position.x - .4f, transform.position.y - .36f, transform.position.z), Quaternion.identity);
 		}        
 	}
-
-	void Reset()
-	//TODO if you try to pick up the can it deletes the can as well as the goo it created (createdGoo)
-	{
-
-	}
-
 }

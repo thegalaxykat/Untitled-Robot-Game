@@ -10,17 +10,14 @@ public class GooFlow : MonoBehaviour
 
     private float distTraveled = 1f; //includes initial length
 
-    // Start is called before the first frame update
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {       
        Flow();
-        ////GetComponent<SpriteRenderer>().size += new Vector2(stretchFactor, 0); //(test)
     }
 
  void Flow() //goo spreads out on level ground (if it hits a ledge or a change in height it just stops)

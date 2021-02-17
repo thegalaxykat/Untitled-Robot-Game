@@ -16,6 +16,7 @@ public GameObject tippedCan; //newTippedCan in CanBehaviour script
 public GameObject createdGoo; //createdGoo in GooSpill script
 
 public bool switchedToTippedCan;
+public GameObject smoke;
 
 public bool dropStart; //if you want a can to drop when the level 
 private bool previousCanDeleted;
@@ -75,10 +76,11 @@ private bool previousCanDeleted;
     }
 
     void DeleteCan() //just the regular can
-    {
-        Destroy(pipeCan);
+	{
+		//Instantiate(smoke, new Vector3(pipeCan.transform.position.x, pipeCan.transform.position.y, pipeCan.transform.position.z), Quaternion.identity);
+		Destroy(pipeCan);
 
-        previousCanDeleted = true; //there is no longer a can
+		previousCanDeleted = true; //there is no longer a can
     }
 
     void DeleteTippedCanAndGoo() //destroy created can and created goo

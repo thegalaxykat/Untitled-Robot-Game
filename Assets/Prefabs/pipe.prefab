@@ -145,4 +145,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gooCan: {fileID: 6660489708298076732, guid: 6c3dbf61a64e04f438905ae7b209bf7d, type: 3}
   button: {fileID: 0}
+  tippedCan: {fileID: 0}
+  createdGoo: {fileID: 0}
+  switchedToTippedCan: 0
+  smoke: {fileID: 267483984167324314, guid: ed81071d0669c2a42bf186ec2c3ad4fc, type: 3}
   dropStart: 0

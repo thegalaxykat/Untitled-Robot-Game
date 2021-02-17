@@ -175,8 +175,11 @@ MonoBehaviour:
   TippedCan: {fileID: 8001714200507462858, guid: 5ce1f8dd9b4c0d84b94f52fc862ea1b9,
     type: 3}
   canCanTip: 0
-  createdCan: {fileID: 0}
+  newTippedCan: {fileID: 0}
   robot: {fileID: 0}
+  pipe: {fileID: 0}
+  smoke: {fileID: 267483984167324314, guid: ed81071d0669c2a42bf186ec2c3ad4fc, type: 3}
+  independentCan: 0
 --- !u!114 &6660489708298076735
 MonoBehaviour:
   m_ObjectHideFlags: 0

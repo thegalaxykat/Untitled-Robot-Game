@@ -16,6 +16,9 @@ public class CanBehaviour : MonoBehaviour
     public GameObject newTippedCan;
     public GameObject robot;
     public GameObject pipe;
+    public GameObject smoke;
+
+    public bool independentCan; //check yes if the can is not assosiated with a pipe (placed by player)
 
     void Start()
     {
@@ -61,15 +64,19 @@ public class CanBehaviour : MonoBehaviour
         {
             newTippedCan = Instantiate(TippedCan, new Vector3(transform.position.x + -.2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 90));      
         }
-        //update the pipe with the new variables
-        pipe.GetComponent<CanPipe>().tippedCan = newTippedCan;
 
-        //transfer the pipe variable to the tipped can
-        newTippedCan.GetComponent<GooSpill>().pipe = pipe; 
+		if (independentCan == false) //if the can was created by a pipe
+		{
+			//update the pipe with the new variables
+			pipe.GetComponent<CanPipe>().tippedCan = newTippedCan;
 
-        pipe.GetComponent<CanPipe>().switchedToTippedCan = true;
+			//transfer the pipe variable to the tipped can
+			newTippedCan.GetComponent<GooSpill>().pipe = pipe;
 
+			pipe.GetComponent<CanPipe>().switchedToTippedCan = true;
+		}
         //delete the first can
+
         Destroy (gameObject);
 	}
 }

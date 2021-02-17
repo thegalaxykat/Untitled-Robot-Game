@@ -9,6 +9,7 @@ public class GooSpill : MonoBehaviour
 
 public GameObject goo;
 public GameObject createdGoo;
+public GameObject pipe;
 
     void Start()
     {
@@ -32,6 +33,7 @@ public GameObject createdGoo;
 		{
 			//to the left
 			createdGoo = Instantiate(goo, new Vector3(transform.position.x - .4f, transform.position.y - .36f, transform.position.z), Quaternion.identity);
-		}        
+		}
+        pipe.GetComponent<CanPipe>().createdGoo = createdGoo;
 	}
 }

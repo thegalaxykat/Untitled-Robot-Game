@@ -12,8 +12,12 @@ public GameObject gooCan; //which type of goo can
 public GameObject button; //which button triggers it
 
 private GameObject pipeCan;
+public GameObject tippedCan; //newTippedCan in CanBehaviour script
+public GameObject createdGoo; //createdGoo in GooSpill script
 
-public bool dropStart; // if you want a can to drop when the level 
+public bool switchedToTippedCan;
+
+public bool dropStart; //if you want a can to drop when the level 
 private bool previousCanDeleted;
 
     void Start()
@@ -23,17 +27,20 @@ private bool previousCanDeleted;
         previousCanDeleted = true;
 
         if (dropStart == true)
-        {   //drop a can when the level starts
+        {//drop a can when the level starts
             DropCan(); 
+            previousCanDeleted = false;
         }
     }
 
     void Update()
     {
+
+    //button logic
         if(button_script.buttonTrigger == true
         && previousCanDeleted == false)
         {
-            DeleteCan();
+            Reset(); //delete previous can
             DropCan();
         }
         if(button_script.buttonTrigger == true
@@ -47,22 +54,41 @@ private bool previousCanDeleted;
     {   //instantiate a can
         pipeCan = Instantiate(gooCan, new Vector3(transform.position.x, transform.position.y , transform.position.z), Quaternion.identity);
 
+        //sets the pipe that created it to the pipe variable
+        pipeCan.GetComponent<CanBehaviour>().pipe = gameObject;
+
         //there is currently a can
         previousCanDeleted = false;
     }
 
-    void DeleteCan()
+    void Reset() //if the can hasn't been tipped then delete can, if can has been tipped, delete tipped can and goo
+    {
+        if(switchedToTippedCan == true)
+        {
+            DeleteTippedCanAndGoo();
+            switchedToTippedCan = false;
+        }
+        else
+        {
+            DeleteCan();
+        }
+    }
+
+    void DeleteCan() //just the regular can
     {
         Destroy(pipeCan);
 
-        //there is no longer a can
+        previousCanDeleted = true; //there is no longer a can
+    }
+
+    void DeleteTippedCanAndGoo() //destroy created can and created goo
+    //! Note- test with key press first
+    {
+        Destroy(tippedCan);
+        Destroy(createdGoo);
+
         previousCanDeleted = true;
     }
 
-    //TODO- delete tipped cans & respective goo when button pressed
-    void Reset() // delete tipped goo can and respective goo
-    {
-        
-    }
 }
 

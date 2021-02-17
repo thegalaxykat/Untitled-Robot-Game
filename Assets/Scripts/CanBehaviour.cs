@@ -13,8 +13,9 @@ public class CanBehaviour : MonoBehaviour
     public GameObject TippedCan;
     public bool canCanTip;
 
-    public GameObject createdCan;
+    public GameObject newTippedCan;
     public GameObject robot;
+    public GameObject pipe;
 
     void Start()
     {
@@ -53,13 +54,20 @@ public class CanBehaviour : MonoBehaviour
 		//instantiate tipped can (RIGHT)
 		if (pickUpScript.tipRight == true)
         {
-            createdCan = Instantiate(TippedCan, new Vector3(transform.position.x + .2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 270));
+            newTippedCan = Instantiate(TippedCan, new Vector3(transform.position.x + .2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 270));
         }
         else
 		//instantiate tipped can (LEFT)
         {
-            createdCan = Instantiate(TippedCan, new Vector3(transform.position.x + -.2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 90));      
+            newTippedCan = Instantiate(TippedCan, new Vector3(transform.position.x + -.2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 90));      
         }
+        //update the pipe with the new variables
+        pipe.GetComponent<CanPipe>().tippedCan = newTippedCan;
+
+        //transfer the pipe variable to the tipped can
+        newTippedCan.GetComponent<GooSpill>().pipe = pipe; 
+
+        pipe.GetComponent<CanPipe>().switchedToTippedCan = true;
 
         //delete the first can
         Destroy (gameObject);

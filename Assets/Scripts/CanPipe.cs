@@ -77,19 +77,25 @@ private bool previousCanDeleted;
 
     void DeleteCan() //just the regular can
 	{
-		//Instantiate(smoke, new Vector3(pipeCan.transform.position.x, pipeCan.transform.position.y, pipeCan.transform.position.z), Quaternion.identity);
-		Destroy(pipeCan);
+        SmokeEffect(pipeCan);
 
+		Destroy(pipeCan);
 		previousCanDeleted = true; //there is no longer a can
     }
 
     void DeleteTippedCanAndGoo() //destroy created can and created goo
     //! Note- test with key press first
     {
+        SmokeEffect(tippedCan);
         Destroy(tippedCan);
         Destroy(createdGoo);
 
         previousCanDeleted = true;
+    }
+
+    void SmokeEffect(GameObject delObj)
+    {
+        Instantiate(smoke, new Vector3(delObj.transform.position.x, delObj.transform.position.y, delObj.transform.position.z), Quaternion.identity);
     }
 
 }

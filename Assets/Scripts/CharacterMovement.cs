@@ -15,6 +15,7 @@ public class CharacterMovement : MonoBehaviour{
     public float checkRadius;
     public LayerMask whatIsGround;
     public int extraJump;
+    private bool gooCollison;
 
     public bool facingRight;
     
@@ -23,6 +24,7 @@ public class CharacterMovement : MonoBehaviour{
     public GameObject can;
 
     public static CharacterMovement current;
+
 
     void Awake()
     {
@@ -75,7 +77,8 @@ public class CharacterMovement : MonoBehaviour{
         //jump
             isGrounded = Physics2D.OverlapCircle(BottomPos.position, checkRadius, whatIsGround);
 
-            if(isGrounded == true){
+            if(isGrounded == true
+            && gooCollison == false){
                 extraJump = 1;
             }
 
@@ -89,4 +92,22 @@ public class CharacterMovement : MonoBehaviour{
 
             }
     }
+
+        // void OnCollisionStay2D(Collider2D collisionPartner)
+        // {
+        //     if(collisionPartner.gameObject.tag == "goo")
+        //     {
+        //         gooCollison = true;
+        //         Debug.Log("hitting goo");
+        //     }
+        // }
+        // void OnCollisionExit2D(Collider2D collisionPartner)
+        // {
+        //     if(collisionPartner.gameObject.tag == "goo")
+        //     {
+        //         Debug.Log("not on goo");
+        //         gooCollison = false;
+        //     }
+        // }
+
 }

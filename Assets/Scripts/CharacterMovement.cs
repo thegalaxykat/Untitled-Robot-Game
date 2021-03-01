@@ -73,6 +73,7 @@ public class CharacterMovement : MonoBehaviour{
 			animate.SetBool("isDriving", false);
 		}
 
+        //speed boost on Lshift
 		if (Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			speed += 2.5f;
@@ -90,7 +91,7 @@ public class CharacterMovement : MonoBehaviour{
 		if (isGrounded == true
 		&& gooCollison == false)
 		{
-			extraJump = 1;
+			//extraJump = 1; //double jump
 		}
 
 		if (Input.GetKeyDown(KeyCode.Space) && extraJump > 0)

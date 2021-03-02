@@ -40,6 +40,7 @@ public class CharacterMovement : MonoBehaviour{
     {
        Drive();
        Jump();
+       fallboost();
     }
 
     void Drive()
@@ -106,6 +107,20 @@ public class CharacterMovement : MonoBehaviour{
 			animate.SetTrigger("isJumping");
 		}
 	}
+
+    void fallboost() //increase gravity and fall faster
+    {
+        if (Input.GetKeyDown(KeyCode.S)) //increase gravity
+        {
+            rb.gravityScale = 4.5f;
+        }
+        if (Input.GetKeyUp(KeyCode.S)) //return to normal
+        {
+            rb.gravityScale = 2.5f;
+        }
+
+        //TODO add animation (eyes change size or eyebrows suddenly appear and furrow or something)
+    }
 
     private void testgooCollison() //*placeholder for currently unused code
         {

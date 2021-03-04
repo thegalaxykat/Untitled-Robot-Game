@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - goo
+  - testgoo
   layers:
   - Default
   - TransparentFX

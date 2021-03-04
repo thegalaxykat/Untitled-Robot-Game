@@ -48,6 +48,7 @@ public class CharacterMovement : MonoBehaviour{
 		////fallboost();
 
 		robotVelocity = rb.velocity.y;
+		//Debug.Log(robotVelocity);
 	}
 
     void Drive()
@@ -146,13 +147,13 @@ public class CharacterMovement : MonoBehaviour{
 		if (collision.gameObject.tag == "testgoo") //on robot contact with goo
 		{
 			// if robot velocity > minBounceVelocity (rb.velocity.y)
-			if(rb.velocity.y < -15)
+			if(robotVelocity < -10)
 			{
-				rb.velocity = new Vector3 (0,-1*(rb.velocity.y),0);
+				rb.velocity = new Vector3 (0,-robotVelocity,0);
 			}
 			else
 			{
-				rb.velocity = new Vector3 (0,15,0);
+				rb.velocity = new Vector3 (0,jump + 2,0);
 			}
 		}
 	}

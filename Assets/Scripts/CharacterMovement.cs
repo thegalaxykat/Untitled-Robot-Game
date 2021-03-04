@@ -15,12 +15,13 @@ public class CharacterMovement : MonoBehaviour{
 
     //jumping
     public float jump; //jump height of character
-    private bool isGrounded;
+    public float stamina;
+    public bool isGrounded;
     public Transform BottomPos;
     public float checkRadius;
     public LayerMask whatIsGround;
     public int extraJump;
-    private bool gooCollison;
+    public bool gooCollison;
 
     public GameObject can;
 
@@ -36,12 +37,12 @@ public class CharacterMovement : MonoBehaviour{
         facingRight = true;
     }
 
-    void Update()
-    {
-       Drive();
-       Jump();
-       fallboost();
-    }
+	void Update()
+	{
+		Drive();
+		Jump();
+		fallboost();
+	}
 
     void Drive()
 	{
@@ -89,8 +90,8 @@ public class CharacterMovement : MonoBehaviour{
 	{
 		isGrounded = Physics2D.OverlapCircle(BottomPos.position, checkRadius, whatIsGround);
 
-		if (isGrounded == true
-		&& gooCollison == false)
+		if (isGrounded == true)
+		////&& gooCollison == false)
 		{
 			//extraJump = 1; //double jump
 		}
@@ -110,34 +111,42 @@ public class CharacterMovement : MonoBehaviour{
 
     void fallboost() //increase gravity and fall faster
     {
-        if (Input.GetKeyDown(KeyCode.S)) //increase gravity
+		if (isGrounded == true //reset stamina when touching the ground
+        && gooCollison == false) //if hitting the ground but not goo
         {
-            rb.gravityScale = 4.5f;
+		   stamina = 40; //frames the effect should last
         }
-        if (Input.GetKeyUp(KeyCode.S)) //return to normal
+
+        if (Input.GetKey(KeyCode.S)
+        && stamina > 0 )
+		{
+			stamina -= 1f; //subtract stamina every frame fall boost is triggered
+		}
+        if (Input.GetKeyDown(KeyCode.S)
+        && stamina > 0) 
         {
-            rb.gravityScale = 2.5f;
+			rb.gravityScale = 4.5f; //increase gravity if stamina > 0
+        }
+        if (Input.GetKeyUp(KeyCode.S)
+        || stamina == 0) //return to normal gravity
+        {
+			rb.gravityScale = 2.5f;
         }
 
         //TODO add animation (eyes change size or eyebrows suddenly appear and furrow or something)
     }
 
-    private void testgooCollison() //*placeholder for currently unused code
-        {
-        // void OnCollisionStay2D(Collider2D collisionPartner)
-        // {
-        //     if(collisionPartner.gameObject.tag == "goo")
-        //     {
-        //         gooCollison = true;
-        //         Debug.Log("hitting goo");
-        //     }
-        // }
-        // void OnCollisionExit2D(Collider2D collisionPartner)
-        // {
-        //     if(collisionPartner.gameObject.tag == "goo")
-        //     {
-        //         Debug.Log("not on goo");
-        //         gooCollison = false;
-        //     }
-        }
+	void OnCollisionEnter2D(Collision2D collision)
+	{
+		if (collision.gameObject.tag == "goo")
+		{			
+			gooCollison = true; //set to true at beginning of collision
+		}
+	}
+	void OnCollisionExit2D(Collision2D collision)
+	{
+		{
+			gooCollison = false; //set to false at end of collision
+		}
+	}
 }

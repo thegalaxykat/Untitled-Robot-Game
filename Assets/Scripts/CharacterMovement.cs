@@ -15,13 +15,17 @@ public class CharacterMovement : MonoBehaviour{
 
     //jumping
     public float jump; //jump height of character
-    public float stamina;
+    private float stamina;
     public bool isGrounded;
     public Transform BottomPos;
     public float checkRadius;
     public LayerMask whatIsGround;
     public int extraJump;
-    public bool gooCollison;
+    private bool gooCollison;
+
+	//bouncing
+	public float minBounceVelocity; //probably about 15
+	public float robotVelocity;
 
     public GameObject can;
 
@@ -41,7 +45,9 @@ public class CharacterMovement : MonoBehaviour{
 	{
 		Drive();
 		Jump();
-		fallboost();
+		////fallboost();
+
+		robotVelocity = rb.velocity.y;
 	}
 
     void Drive()
@@ -90,11 +96,10 @@ public class CharacterMovement : MonoBehaviour{
 	{
 		isGrounded = Physics2D.OverlapCircle(BottomPos.position, checkRadius, whatIsGround);
 
-		if (isGrounded == true)
-		////&& gooCollison == false)
-		{
-			//extraJump = 1; //double jump
-		}
+		// if (isGrounded == true)
+		// {
+		// 	//extraJump = 1; //double jump
+		// }
 
 		if (Input.GetKeyDown(KeyCode.Space) && extraJump > 0)
 		{
@@ -136,17 +141,19 @@ public class CharacterMovement : MonoBehaviour{
         //TODO add animation (eyes change size or eyebrows suddenly appear and furrow or something)
     }
 
-	void OnCollisionEnter2D(Collision2D collision)
+	void OnCollisionEnter2D(Collision2D collision) 
 	{
-		if (collision.gameObject.tag == "goo")
-		{			
-			gooCollison = true; //set to true at beginning of collision
-		}
-	}
-	void OnCollisionExit2D(Collision2D collision)
-	{
+		if (collision.gameObject.tag == "testgoo") //on robot contact with goo
 		{
-			gooCollison = false; //set to false at end of collision
+			// if robot velocity > minBounceVelocity (rb.velocity.y)
+			if(rb.velocity.y < -15)
+			{
+				rb.velocity = new Vector3 (0,-1*(rb.velocity.y),0);
+			}
+			else
+			{
+				rb.velocity = new Vector3 (0,15,0);
+			}
 		}
 	}
 }

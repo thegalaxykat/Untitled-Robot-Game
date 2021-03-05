@@ -107,7 +107,7 @@ public class CharacterMovement : MonoBehaviour{
 			animate.SetTrigger("isJumping");
 			extraJump--;
 		}
-		else if (Input.GetKeyDown(KeyCode.W) && extraJump == 0 && isGrounded == true)
+		else if (Input.GetKeyDown(KeyCode.Space) && extraJump == 0 && isGrounded == true)
 		{
 			rb.velocity = Vector2.up * jump;
 			animate.SetTrigger("isJumping");

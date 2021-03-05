@@ -275,7 +275,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 2ee00e1431db1c44fa439b145f3b6f48, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -340,7 +340,7 @@ Transform:
   m_GameObject: {fileID: 163534001}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.34, y: -4.01, z: 0}
-  m_LocalScale: {x: 7.062488, y: 1, z: 1}
+  m_LocalScale: {x: 12.302441, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
@@ -75205,6 +75205,11 @@ PrefabInstance:
         type: 3}
       propertyPath: speed
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2198477509414455736, guid: b1024e6dc11654b45a9fd9871703883c,
+        type: 3}
+      propertyPath: minBounceVelocity
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2198477509414455739, guid: b1024e6dc11654b45a9fd9871703883c,
         type: 3}

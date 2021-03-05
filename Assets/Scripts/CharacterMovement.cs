@@ -24,7 +24,7 @@ public class CharacterMovement : MonoBehaviour{
     private bool gooCollison;
 
 	//bouncing
-	public float minBounceVelocity; //probably about 15
+	public float minBounceVelocity; //magnitude of downwards velocity (probably about 15)
 	public float robotVelocity;
 
     public GameObject can;
@@ -144,12 +144,12 @@ public class CharacterMovement : MonoBehaviour{
 
 	void OnCollisionEnter2D(Collision2D collision) 
 	{
-		if (collision.gameObject.tag == "testgoo") //on robot contact with goo
+		if (collision.gameObject.tag == "goo") //on robot contact with goo
 		{
 			// if robot velocity > minBounceVelocity (rb.velocity.y)
-			if(robotVelocity < -10)
+			if(robotVelocity < -minBounceVelocity)
 			{
-				rb.velocity = new Vector3 (0,-robotVelocity,0);
+				rb.velocity = new Vector3 (0,-robotVelocity + .8f,0); //note: the added .8 accounts for lost speed 
 			}
 			else
 			{

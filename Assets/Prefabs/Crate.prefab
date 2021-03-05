@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8784824826683174775, guid: 35283d325ec99dd44947e904b23f2a19,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -148,6 +148,7 @@ MonoBehaviour:
   robot: {fileID: 0}
   objectPickedUp: 0
   canTip: 0
+  tipRight: 0
 --- !u!61 &3082798030748044567
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -48,7 +48,6 @@ public class CharacterMovement : MonoBehaviour{
 		////fallboost();
 
 		robotVelocity = rb.velocity.y;
-		//Debug.Log(robotVelocity);
 	}
 
     void Drive()
@@ -99,16 +98,16 @@ public class CharacterMovement : MonoBehaviour{
 
 		// if (isGrounded == true)
 		// {
-		// 	//extraJump = 1; //double jump
+		// 	//extraJump = 1;
 		// }
 
-		if (Input.GetKeyDown(KeyCode.Space) && extraJump > 0)
+		if (Input.GetKeyDown(KeyCode.W) && extraJump > 0)
 		{
 			rb.velocity = Vector2.up * jump;
 			animate.SetTrigger("isJumping");
 			extraJump--;
 		}
-		else if (Input.GetKeyDown(KeyCode.Space) && extraJump == 0 && isGrounded == true)
+		else if (Input.GetKeyDown(KeyCode.W) && extraJump == 0 && isGrounded == true)
 		{
 			rb.velocity = Vector2.up * jump;
 			animate.SetTrigger("isJumping");
@@ -153,7 +152,7 @@ public class CharacterMovement : MonoBehaviour{
 			}
 			else
 			{
-				rb.velocity = new Vector3 (0,jump + 2,0);
+				rb.velocity = new Vector3 (0,jump + 2.5f,0);
 			}
 		}
 	}

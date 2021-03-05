@@ -101,7 +101,7 @@ public class CharacterMovement : MonoBehaviour{
 		// 	//extraJump = 1;
 		// }
 
-		if (Input.GetKeyDown(KeyCode.W) && extraJump > 0)
+		if (Input.GetKeyDown(KeyCode.Space) && extraJump > 0)
 		{
 			rb.velocity = Vector2.up * jump;
 			animate.SetTrigger("isJumping");

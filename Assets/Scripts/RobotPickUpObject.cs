@@ -33,7 +33,7 @@ If the player tries to pick something up and is in range, it triggers objectPick
 
 	void UpOrDown()
 	{
-		if (Input.GetKeyUp(KeyCode.Space))
+		if (Input.GetKeyUp(KeyCode.W))
 		{
 			if (PickedUpObj != null)
 			//if holding something put down

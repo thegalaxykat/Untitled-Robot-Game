@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class TitleScreen : MonoBehaviour
 {
-        public void Level1() {  
-        SceneManager.LoadScene("Level 1");
-    }  
+//button fucnctions
+
+	public void Level1()
+	{
+        Debug.Log("Level 1");
+		SceneManager.LoadScene("Level 1");
+	}
 
 	public void exitgame()
 	{
@@ -15,4 +19,21 @@ public class TitleScreen : MonoBehaviour
 		Application.Quit();
 	}
 
+    public void credits()
+    {
+        Debug.Log("credits");
+		SceneManager.LoadScene("Credits");
+    }
+
+    public void settings()
+    {
+        Debug.Log("settings");
+		SceneManager.LoadScene("Settings");
+    }
+
+    public void mainmenu()
+    {
+        Debug.Log("Main Menu");
+        SceneManager.LoadScene("Title Screen");
+    }
 }

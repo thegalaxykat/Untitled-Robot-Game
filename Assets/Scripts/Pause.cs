@@ -42,4 +42,10 @@ public class Pause : MonoBehaviour
         Canvas.SetActive(false);
         Debug.Log("Unpaused");
 	}
+
+    void MainMenu()
+    {
+        Canvas.SetActive(false);
+        
+    }
 }

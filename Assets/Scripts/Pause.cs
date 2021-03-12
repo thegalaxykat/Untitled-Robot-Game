@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class Pause : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
         if (Input.GetKeyUp(KeyCode.Escape))
         {
             if (isPaused == false)
@@ -27,7 +28,7 @@ public class Pause : MonoBehaviour
         }
     }
 
-	void PauseGame()
+	public void PauseGame()
 	{
 		Time.timeScale = 0;
         isPaused = true;
@@ -35,7 +36,7 @@ public class Pause : MonoBehaviour
         Debug.Log("Paused");
 	}
 
-	void ResumeGame()
+	public void ResumeGame()
 	{
 		Time.timeScale = 1;
         isPaused = false;
@@ -43,9 +44,26 @@ public class Pause : MonoBehaviour
         Debug.Log("Unpaused");
 	}
 
-    void MainMenu()
+    public void MainMenu()
     {
-        Canvas.SetActive(false);
-        
+        Time.timeScale = 1;
+        isPaused = false;
+        Debug.Log("Main Menu");
+        SceneManager.LoadScene("Title Screen");
     }
+
+    public void RestartLevel()
+    {
+        Time.timeScale = 1;
+        isPaused = false;
+        Debug.Log("Restart Level");
+        SceneManager.LoadScene("Level 1");
+    }
+
+    public void exitgame()
+	{
+		Debug.Log("Quit game");
+		Application.Quit();
+	}
+
 }

@@ -475,7 +475,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: you thought this game is fancy enough to have settings? lol nope
+  m_text: you think this game is fancy enough to have settings? lol nope
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cb3c1093458a8e4489feaa720c866b95, type: 2}
   m_sharedMaterial: {fileID: 1661437997157761842, guid: cb3c1093458a8e4489feaa720c866b95,

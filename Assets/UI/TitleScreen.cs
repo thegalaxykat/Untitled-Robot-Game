@@ -30,10 +30,4 @@ public class TitleScreen : MonoBehaviour
         Debug.Log("settings");
 		SceneManager.LoadScene("Settings");
     }
-
-    public void mainmenu()
-    {
-        Debug.Log("Main Menu");
-        SceneManager.LoadScene("Title Screen");
-    }
 }

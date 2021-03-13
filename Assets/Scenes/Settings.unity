@@ -453,7 +453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -960, y: 448}
+  m_AnchoredPosition: {x: -960, y: 371}
   m_SizeDelta: {x: 1034.6431, y: 122.17555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &701130885
@@ -477,8 +477,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: you think this game is fancy enough to have settings? lol nope
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb3c1093458a8e4489feaa720c866b95, type: 2}
-  m_sharedMaterial: {fileID: 1661437997157761842, guid: cb3c1093458a8e4489feaa720c866b95,
+  m_fontAsset: {fileID: 11400000, guid: cf6d7d779df53a74396b2ab57e8b4246, type: 2}
+  m_sharedMaterial: {fileID: 7103440640707459996, guid: cf6d7d779df53a74396b2ab57e8b4246,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -503,13 +503,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535

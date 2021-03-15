@@ -8,7 +8,7 @@ public class GooFlow : MonoBehaviour
     public float stretchFactor; // where 1 is a whole tile
     public float LimitFlowDist; // where 1 = 1 tile
 
-    private float distTraveled = 1f; //includes initial length
+    private float distTraveled = 1f; // includes initial length
 
     void Start()
     {
@@ -18,17 +18,23 @@ public class GooFlow : MonoBehaviour
     void Update()
     {       
        Flow();
+
+       Test();
     }
 
- void Flow() //goo spreads out on level ground (if it hits a ledge or a change in height it just stops)
+   void Test()
+   {
+      
+   }
+
+   void Flow() //goo spreads out on level ground (if it hits a ledge or a change in height it just stops)
     {
 		if (distTraveled < LimitFlowDist)
 		{
-			//every time this line is run the sprite will increase by the stretch factor
+			// every time this line is run the sprite will increase by the stretch factor
 			GetComponent<SpriteRenderer>().size += new Vector2(stretchFactor, 0);
-			//add the distance moved to distTravled
+			// add the distance moved to distTraveled
 			distTraveled += stretchFactor;
         }
     }
-    
 }

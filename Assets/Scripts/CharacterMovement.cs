@@ -138,7 +138,6 @@ public class CharacterMovement : MonoBehaviour{
 			rb.gravityScale = 2.5f;
         }
 
-        //TODO add animation (eyes change size or eyebrows suddenly appear and furrow or something)
     }
 
 	void OnCollisionEnter2D(Collision2D collision) 

@@ -35,6 +35,9 @@ public class GooFlow : MonoBehaviour
 			// every time this line is run the sprite will increase by the stretch factor
 			GetComponent<SpriteRenderer>().size += new Vector2(stretchFactor, 0);
 			distTraveled += stretchFactor;// add the distance moved to distTraveled
+
+      //TODO move the edge point equal to the stretch factor
+      GooSpreadingTip.transform.Translate(new Vector2(-stretchFactor, 0));
 		}
 	}
 

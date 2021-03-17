@@ -137,7 +137,6 @@ public class CharacterMovement : MonoBehaviour{
         {
 			rb.gravityScale = 2.5f;
         }
-
     }
 
 	void OnCollisionEnter2D(Collision2D collision) 

@@ -23,6 +23,7 @@ public class FinishFlow : MonoBehaviour
 		whatIsGround = GameObject.Find("Robot").GetComponent<CharacterMovement>().whatIsGround; //the same thing the robot defines as ground
 
         //TODO MAKE IT FALL
+        //gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
 	}
 
 	void Update()
@@ -32,18 +33,6 @@ public class FinishFlow : MonoBehaviour
 		{
 			Flow();
 		}
-
-		if (isGrounded == false) // if it's not on the ground
-        {
-            if(hitGround == true) // but was on the ground at some point
-            {
-                if(distTraveled < remainingFlowDist) // and it still has some distance to flow
-                {
-                    // then it probably hit a ledge
-                    Debug.Log("Ledge detected");
-                }
-            }
-        }
     }
 
     // check for initial collison with ground
@@ -51,6 +40,7 @@ public class FinishFlow : MonoBehaviour
     {
         if(other.gameObject.layer == 8) //if it collides with ground
         hitGround = true;
+        //gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
     }
 
 	void Flow() //goo spreads out on level ground (if it hits a ledge or a change in height it just stops)
@@ -68,9 +58,22 @@ public class FinishFlow : MonoBehaviour
 	void checkForLedge() //check to see if the tip of the expanding goo is still on the ground
 	{
 		isGrounded = Physics2D.OverlapCircle(GooSpreadingTip.position, checkRadius, whatIsGround); //isGrounded = true if the spreading tip touching ground
+
+        if (isGrounded == false) // if it's not on the ground
+        {
+            if(hitGround == true) // but was on the ground at some point
+            {
+                if(distTraveled < remainingFlowDist) // and it still has some distance to flow
+                {
+                    // then it probably hit a ledge
+                    Debug.Log("Ledge detected");
+                    //FinishFlowing(); //! testing
+                }
+            }
+        }
 	}
 
-	void FallLikeARock() //instantiate new object and expand for remaining distance
+	void FinishFlowing() //instantiate new object and expand for remaining distance
 	{
 		if (fallenGoo == null) //hopefully prevents new instances of goo being created every frame
 		{

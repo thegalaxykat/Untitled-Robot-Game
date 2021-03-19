@@ -29,13 +29,6 @@ public class GooFlow : MonoBehaviour
 		{
 			Flow();
 		}
-
-    if (isGrounded == false
-    && distTraveled < LimitFlowDist) //if it's not on the ground and the distance hasn't reached the limit it must have hit a ledge
-    {
-      Debug.Log("Ledge detected");
-      FallLikeARock();
-    }
 	}
 
 	void Flow() //goo spreads out on level ground (if it hits a ledge or a change in height it just stops)
@@ -53,18 +46,24 @@ public class GooFlow : MonoBehaviour
 	void checkForLedge() //check to see if the tip of the expanding goo is still on the ground
 	{
 		isGrounded = Physics2D.OverlapCircle(GooSpreadingTip.position, checkRadius, whatIsGround); //isGrounded = true if the spreading tip touching ground
+
+    if (isGrounded == false
+    && distTraveled < LimitFlowDist) //if it's not on the ground and the distance hasn't reached the limit it must have hit a ledge
+    {
+      Debug.Log("Ledge detected");
+      FinishFlowing();
+    }
 	}
 
-  void FallLikeARock() //instantiate new object and expand for remaining distance
+  void FinishFlowing() //instantiate new object and expand for remaining distance
   {
     if (fallenGoo == null) //hopefully prevents new instances of goo being created every frame
     {
       fallenGoo = Instantiate(GreenGooFinishFlowPrefab, new Vector3(GooSpreadingTip.transform.position.x,GooSpreadingTip.transform.position.y,GooSpreadingTip.transform.position.z), Quaternion.identity);
     }
-    //TODO make sure this new object is deleted when the pipe is reset
 
     //New distance is (LimitFlowDist - distTraveled) of original goo
-    fallenGoo.GetComponent<GooFlow>().LimitFlowDist = (LimitFlowDist - distTraveled);
+    fallenGoo.GetComponent<FinishFlow>().remainingFlowDist = (LimitFlowDist - distTraveled);
 
     //TODO make it fall
 

@@ -11,10 +11,14 @@ PrefabInstance:
       propertyPath: LimitFlowDist
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 285271643, guid: 4494ce8caac408d4fbaf72ef0c44d8fa, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6339118428320776148, guid: 4494ce8caac408d4fbaf72ef0c44d8fa,
         type: 3}
       propertyPath: m_Name
-      value: GreenGooFinishFall
+      value: GreenGooFinishFlow
       objectReference: {fileID: 0}
     - target: {fileID: 6339118428320776150, guid: 4494ce8caac408d4fbaf72ef0c44d8fa,
         type: 3}

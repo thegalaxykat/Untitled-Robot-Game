@@ -183,6 +183,6 @@ MonoBehaviour:
   isGrounded: 0
   checkRadius: 0.1
   GooSpreadingTip: {fileID: 4027881827363176390}
-  GreenGooFinishFallPrefab: {fileID: 2400121232324358421, guid: 0328396a88c7cd3468947e80b9919d99,
+  GreenGooFinishFlowPrefab: {fileID: 2400121232324358421, guid: 0328396a88c7cd3468947e80b9919d99,
     type: 3}
   fallenGoo: {fileID: 0}

@@ -14,7 +14,7 @@ public class GooFlow : MonoBehaviour
 	public float checkRadius;
 	public Transform GooSpreadingTip;
 
-  public GameObject GreenGooFinishFallPrefab;
+  public GameObject GreenGooFinishFlowPrefab;
   public GameObject fallenGoo;
 
 	void Start()
@@ -59,7 +59,7 @@ public class GooFlow : MonoBehaviour
   {
     if (fallenGoo == null) //hopefully prevents new instances of goo being created every frame
     {
-      fallenGoo = Instantiate(GreenGooFinishFallPrefab, new Vector3(GooSpreadingTip.transform.position.x,GooSpreadingTip.transform.position.y,GooSpreadingTip.transform.position.z), Quaternion.identity);
+      fallenGoo = Instantiate(GreenGooFinishFlowPrefab, new Vector3(GooSpreadingTip.transform.position.x,GooSpreadingTip.transform.position.y,GooSpreadingTip.transform.position.z), Quaternion.identity);
     }
     //TODO make sure this new object is deleted when the pipe is reset
 

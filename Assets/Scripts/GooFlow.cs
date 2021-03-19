@@ -14,6 +14,9 @@ public class GooFlow : MonoBehaviour
 	public float checkRadius;
 	public Transform GooSpreadingTip;
 
+  public GameObject GreenGooFinishFallPrefab;
+  public GameObject fallenGoo;
+
 	void Start()
 	{
 		whatIsGround = GameObject.Find("Robot").GetComponent<CharacterMovement>().whatIsGround; //the same thing the robot defines as ground
@@ -26,23 +29,44 @@ public class GooFlow : MonoBehaviour
 		{
 			Flow();
 		}
+
+    if (isGrounded == false
+    && distTraveled < LimitFlowDist) //if it's not on the ground and the distance hasn't reached the limit it must have hit a ledge
+    {
+      Debug.Log("Ledge detected");
+      FallLikeARock();
+    }
 	}
 
 	void Flow() //goo spreads out on level ground (if it hits a ledge or a change in height it just stops)
 	{
 		if (distTraveled < LimitFlowDist) //as long as the distance is under the maximum, keep stretching
 		{
-			// every time this line is run the sprite will increase by the stretch factor
+			//every time this line is run the sprite will increase by the stretch factor
 			GetComponent<SpriteRenderer>().size += new Vector2(stretchFactor, 0);
-			distTraveled += stretchFactor;// add the distance moved to distTraveled
+			distTraveled += stretchFactor; //add the distance moved to distTraveled
 
-      //TODO move the edge point equal to the stretch factor
-      GooSpreadingTip.transform.Translate(new Vector2(-stretchFactor, 0));
+      GooSpreadingTip.transform.Translate(new Vector2(-stretchFactor, 0)); //translate the checking point
 		}
 	}
 
 	void checkForLedge() //check to see if the tip of the expanding goo is still on the ground
 	{
-		isGrounded = Physics2D.OverlapCircle(GooSpreadingTip.position, checkRadius, whatIsGround); //inGrounded = true if the spreading tip touching ground
+		isGrounded = Physics2D.OverlapCircle(GooSpreadingTip.position, checkRadius, whatIsGround); //isGrounded = true if the spreading tip touching ground
 	}
+
+  void FallLikeARock() //instantiate new object and expand for remaining distance
+  {
+    if (fallenGoo == null) //hopefully prevents new instances of goo being created every frame
+    {
+      fallenGoo = Instantiate(GreenGooFinishFallPrefab, new Vector3(GooSpreadingTip.transform.position.x,GooSpreadingTip.transform.position.y,GooSpreadingTip.transform.position.z), Quaternion.identity);
+    }
+    //TODO make sure this new object is deleted when the pipe is reset
+
+    //New distance is (LimitFlowDist - distTraveled) of original goo
+    fallenGoo.GetComponent<GooFlow>().LimitFlowDist = (LimitFlowDist - distTraveled);
+
+    //TODO make it fall
+
+  }
 }

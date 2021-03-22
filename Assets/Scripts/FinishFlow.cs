@@ -14,6 +14,7 @@ public class FinishFlow : MonoBehaviour
 	public bool isGrounded;
 	public float checkRadius;
 	public Transform GooSpreadingTip;
+    public bool facingLeft;
 
 	public GameObject GreenGooFinishFlowPrefab;
 	public GameObject fallenGoo;

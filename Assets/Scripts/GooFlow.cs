@@ -13,6 +13,7 @@ public class GooFlow : MonoBehaviour
 	public bool isGrounded;
 	public float checkRadius;
 	public Transform GooSpreadingTip;
+  public bool facingLeft;
 
   public GameObject GreenGooFinishFlowPrefab;
   public GameObject fallenGoo;
@@ -59,7 +60,18 @@ public class GooFlow : MonoBehaviour
   {
     if (fallenGoo == null) //hopefully prevents new instances of goo being created every frame
     {
-      fallenGoo = Instantiate(GreenGooFinishFlowPrefab, new Vector3(GooSpreadingTip.transform.position.x,GooSpreadingTip.transform.position.y, 0), Quaternion.identity);
+      if(facingLeft == true) //make sure new object inherits direction
+      {//LEFT
+        fallenGoo = Instantiate(GreenGooFinishFlowPrefab, new Vector3(GooSpreadingTip.transform.position.x,GooSpreadingTip.transform.position.y, 0), Quaternion.identity);
+
+        fallenGoo.GetComponent<FinishFlow>().facingLeft = true;
+      }
+      else
+      {//RIGHT
+        fallenGoo = Instantiate(GreenGooFinishFlowPrefab, new Vector3(GooSpreadingTip.transform.position.x,GooSpreadingTip.transform.position.y, 0), Quaternion.Euler(0, 180, 0));
+
+        fallenGoo.GetComponent<FinishFlow>().facingLeft = false;
+      }
     }
 
     //New distance is (LimitFlowDist - distTraveled) of original goo

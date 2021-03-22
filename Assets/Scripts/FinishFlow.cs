@@ -24,8 +24,7 @@ public class FinishFlow : MonoBehaviour
 	{
 		whatIsGround = GameObject.Find("Robot").GetComponent<CharacterMovement>().whatIsGround; //the same thing the robot defines as ground
 
-        //set rb to dynamic
-        gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic; //set rb to dynamic
 	}
 
 	void Update()
@@ -70,7 +69,7 @@ public class FinishFlow : MonoBehaviour
                 if(distTraveled < remainingFlowDist) // and it still has some distance to flow
                 {
                     // then it probably hit a ledge
-                    Debug.Log("Ledge detected");
+                    ////Debug.Log("Ledge detected");
                     //FinishFlowing(); //!maybe a feature to add later
                 }
             }

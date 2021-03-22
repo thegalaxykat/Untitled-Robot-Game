@@ -13,11 +13,11 @@ public class GooFlow : MonoBehaviour
 	public bool isGrounded;
 	public float checkRadius;
 	public Transform GooSpreadingTip;
-  public bool facingLeft;
+	public bool facingLeft;
 
-  public GameObject GreenGooFinishFlowPrefab;
-  public GameObject fallenGoo;
-  public GameObject pipe;
+	public GameObject GreenGooFinishFlowPrefab;
+	public GameObject fallenGoo;
+	public GameObject pipe;
 
 	void Start()
 	{
@@ -52,7 +52,6 @@ public class GooFlow : MonoBehaviour
     if (isGrounded == false
     && distTraveled < LimitFlowDist) //if it's not on the ground and the distance hasn't reached the limit it must have hit a ledge
     {
-      Debug.Log("Ledge detected");
       FinishFlowing();
     }
 	}

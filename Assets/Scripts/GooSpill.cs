@@ -28,12 +28,17 @@ public GameObject pipe;
         {
             //to the right
             createdGoo = Instantiate(goo, new Vector3(transform.position.x, transform.position.y - .36f, transform.position.z), Quaternion.Euler(0, 180, 0));
+
+            createdGoo.GetComponent<GooFlow>().facingLeft = false;
         }
         else
 		{
 			//to the left
 			createdGoo = Instantiate(goo, new Vector3(transform.position.x - .4f, transform.position.y - .36f, transform.position.z), Quaternion.identity);
+
+            createdGoo.GetComponent<GooFlow>().facingLeft = true;
 		}
         pipe.GetComponent<CanPipe>().createdGoo = createdGoo;
+        createdGoo.GetComponent<GooFlow>().pipe = pipe;
 	}
 }

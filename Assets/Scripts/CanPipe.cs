@@ -14,6 +14,8 @@ public GameObject button; //which button triggers it
 private GameObject pipeCan;
 public GameObject tippedCan; //newTippedCan in CanBehaviour script
 public GameObject createdGoo; //createdGoo in GooSpill script
+public GameObject FallenGoo; //created in GooFlow script
+//TODO track this to be deleted ^
 
 public bool switchedToTippedCan;
 public GameObject smoke;
@@ -84,11 +86,11 @@ private bool previousCanDeleted;
     }
 
     void DeleteTippedCanAndGoo() //destroy created can and created goo
-    //! Note- test with key press first
     {
         SmokeEffect(tippedCan);
         Destroy(tippedCan);
         Destroy(createdGoo);
+        Destroy(FallenGoo);
 
         previousCanDeleted = true;
     }

@@ -22,8 +22,8 @@ public class FinishFlow : MonoBehaviour
 	{
 		whatIsGround = GameObject.Find("Robot").GetComponent<CharacterMovement>().whatIsGround; //the same thing the robot defines as ground
 
-        //TODO MAKE IT FALL
-        //gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        //set rb to dynamic
+        gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
 	}
 
 	void Update()
@@ -39,8 +39,10 @@ public class FinishFlow : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.layer == 8) //if it collides with ground
-        hitGround = true;
-        //gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        {
+            hitGround = true;
+            gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        }
     }
 
 	void Flow() //goo spreads out on level ground (if it hits a ledge or a change in height it just stops)
@@ -77,7 +79,7 @@ public class FinishFlow : MonoBehaviour
 	{
 		if (fallenGoo == null) //hopefully prevents new instances of goo being created every frame
 		{
-			fallenGoo = Instantiate(GreenGooFinishFlowPrefab, new Vector3(GooSpreadingTip.transform.position.x, GooSpreadingTip.transform.position.y, GooSpreadingTip.transform.position.z), Quaternion.identity);
+			fallenGoo = Instantiate(GreenGooFinishFlowPrefab, new Vector2(GooSpreadingTip.transform.position.x, GooSpreadingTip.transform.position.y), Quaternion.identity);
 		}
 		//TODO make sure this new object is deleted when the pipe is reset
 

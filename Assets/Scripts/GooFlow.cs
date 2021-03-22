@@ -59,13 +59,11 @@ public class GooFlow : MonoBehaviour
   {
     if (fallenGoo == null) //hopefully prevents new instances of goo being created every frame
     {
-      fallenGoo = Instantiate(GreenGooFinishFlowPrefab, new Vector3(GooSpreadingTip.transform.position.x,GooSpreadingTip.transform.position.y,GooSpreadingTip.transform.position.z), Quaternion.identity);
+      fallenGoo = Instantiate(GreenGooFinishFlowPrefab, new Vector3(GooSpreadingTip.transform.position.x,GooSpreadingTip.transform.position.y, 0), Quaternion.identity);
     }
 
     //New distance is (LimitFlowDist - distTraveled) of original goo
     fallenGoo.GetComponent<FinishFlow>().remainingFlowDist = (LimitFlowDist - distTraveled);
-
-    //TODO make it fall
 
   }
 }

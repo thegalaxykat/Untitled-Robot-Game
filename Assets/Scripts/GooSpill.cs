@@ -39,5 +39,6 @@ public GameObject pipe;
             createdGoo.GetComponent<GooFlow>().facingLeft = true;
 		}
         pipe.GetComponent<CanPipe>().createdGoo = createdGoo;
+        createdGoo.GetComponent<GooFlow>().pipe = pipe;
 	}
 }

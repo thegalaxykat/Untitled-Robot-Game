@@ -15,6 +15,7 @@ public class FinishFlow : MonoBehaviour
 	public float checkRadius;
 	public Transform GooSpreadingTip;
     public bool facingLeft;
+    public GameObject pipe;
 
 	public GameObject GreenGooFinishFlowPrefab;
 	public GameObject fallenGoo;
@@ -70,7 +71,7 @@ public class FinishFlow : MonoBehaviour
                 {
                     // then it probably hit a ledge
                     Debug.Log("Ledge detected");
-                    //FinishFlowing(); //! testing
+                    //FinishFlowing(); //!maybe a feature to add later
                 }
             }
         }

@@ -17,6 +17,7 @@ public class GooFlow : MonoBehaviour
 
   public GameObject GreenGooFinishFlowPrefab;
   public GameObject fallenGoo;
+  public GameObject pipe;
 
 	void Start()
 	{
@@ -72,10 +73,12 @@ public class GooFlow : MonoBehaviour
 
         fallenGoo.GetComponent<FinishFlow>().facingLeft = false;
       }
+
+      pipe.GetComponent<CanPipe>().FallenGoo = fallenGoo; //so pipe can keep track of what it needs to delete
     }
 
     //New distance is (LimitFlowDist - distTraveled) of original goo
     fallenGoo.GetComponent<FinishFlow>().remainingFlowDist = (LimitFlowDist - distTraveled);
-
+    fallenGoo.GetComponent<FinishFlow>().pipe = pipe;
   }
 }

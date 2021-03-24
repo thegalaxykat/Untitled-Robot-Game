@@ -1307,7 +1307,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 92.34498, y: 1.1799996, z: -10}
+  m_LocalPosition: {x: 92.35493, y: 1.1799996, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -49035,7 +49035,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989696324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 92.34498, y: 1.1799996, z: -10}
+  m_LocalPosition: {x: 92.35493, y: 1.1799996, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 107516100}
@@ -93527,6 +93527,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Elevator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480784126401258774, guid: f97735752f0f7264a953e4083b0a2aca,
+        type: 3}
+      propertyPath: nextLevel
+      value: Level2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480784126401258774, guid: f97735752f0f7264a953e4083b0a2aca,
+        type: 3}
+      propertyPath: nextLevelName
+      value: Title Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480784126401258775, guid: f97735752f0f7264a953e4083b0a2aca,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.91717637
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480784126401258775, guid: f97735752f0f7264a953e4083b0a2aca,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.9837697
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f97735752f0f7264a953e4083b0a2aca, type: 3}

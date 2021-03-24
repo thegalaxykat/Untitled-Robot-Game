@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Elevator : MonoBehaviour
 {
     private Animator animate;
     public bool levelEnd;
+    public string nextLevelName;
+    public bool goToNextLevel;
 
     void Awake()
     {
@@ -32,7 +35,11 @@ public class Elevator : MonoBehaviour
 
     void Update()
     {
-        
+        if (goToNextLevel == true)
+        {
+            Debug.Log("next level");
+            SceneManager.LoadScene(nextLevelName);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other) 
@@ -42,18 +49,14 @@ public class Elevator : MonoBehaviour
             if (levelEnd == true) // if at end of level close the door and end the level
             {
                 Close();
-                NextLevel();
+                //wait for animation to finish and go to next level
             }
         }
 	}
 
-    void NextLevel()
-    {
-
-    }
-
     void Close()
     {
+        //todo stop character movement
         animate.SetBool("Close", true);
     }
 
@@ -61,5 +64,4 @@ public class Elevator : MonoBehaviour
     {
         animate.SetBool("Open", true);
     }
-
 }

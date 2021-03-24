@@ -7,7 +7,7 @@ public class Elevator : MonoBehaviour
     private Animator animate;
     public bool levelEnd;
 
-    void Start()
+    void Awake()
     {
         animate = GetComponent<Animator>();
 
@@ -19,7 +19,10 @@ public class Elevator : MonoBehaviour
         {
             animate.SetBool("StartOpen", false); // if at beginning of level start closed
         }
+    }
 
+    void Start()
+    {
         // if at the beginning of the level just open the doors and that's it
         if (levelEnd == false)
         {

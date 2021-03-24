@@ -37,7 +37,6 @@ public class Elevator : MonoBehaviour
     {
         if (goToNextLevel == true)
         {
-            Debug.Log("next level");
             SceneManager.LoadScene(nextLevelName);
         }
     }

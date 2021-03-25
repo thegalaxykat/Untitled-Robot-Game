@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Elevator : MonoBehaviour
 {
     private Animator animate;
-    public Collider2D wall;
     public bool levelEnd;
     public string nextLevelName;
     public bool goToNextLevel;
@@ -31,7 +30,6 @@ public class Elevator : MonoBehaviour
         if (levelEnd == false)
         {
             Open();
-            wall = GetComponent<Collider2D>();
         }
     }
 
@@ -51,9 +49,6 @@ public class Elevator : MonoBehaviour
             {
                 // disable player movement script
                 other.GetComponent<CharacterMovement>().enabled = false;
-
-                //enable wall collider
-                wall.enabled = true;
                 Close();
                 // wait for animation to finish and go to next level
             }

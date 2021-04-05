@@ -4,7 +4,7 @@ using UnityEngine;
 
 /*
 This script causes a can to tip over once it's been picked up.
-When the can is realeased by the player and hits the ground the first time game object is deleted and a new object for the tipped can is created
+When the can is released by the player and hits the ground the first time game object is deleted and a new object for the tipped can is created
 */
 
 public class CanBehaviour : MonoBehaviour
@@ -58,11 +58,15 @@ public class CanBehaviour : MonoBehaviour
 		if (pickUpScript.tipRight == true)
         {
             newTippedCan = Instantiate(TippedCan, new Vector3(transform.position.x + .2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 270));
+
+            newTippedCan.GetComponent<GooSpill>().spillRight = true;
         }
         else
 		//instantiate tipped can (LEFT)
         {
-            newTippedCan = Instantiate(TippedCan, new Vector3(transform.position.x + -.2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 90));      
+            newTippedCan = Instantiate(TippedCan, new Vector3(transform.position.x + -.2f, transform.position.y - .2f, transform.position.z), Quaternion.Euler(0, 0, 90));
+
+            newTippedCan.GetComponent<GooSpill>().spillRight = false;
         }
 
 		if (independentCan == false) //if the can was created by a pipe

@@ -10,6 +10,7 @@ public class GooSpill : MonoBehaviour
 public GameObject goo;
 public GameObject createdGoo;
 public GameObject pipe;
+public bool spillRight;
 
     void Start()
     {
@@ -24,7 +25,7 @@ public GameObject pipe;
     void Spill()
     //yep, this is the spilly bit!
     {
-        if (CharacterMovement.current.facingRight == true) //direction specific
+        if (spillRight == true) //direction specific (inherited from the can)
         {
             //to the right
             createdGoo = Instantiate(goo, new Vector3(transform.position.x, transform.position.y - .36f, transform.position.z), Quaternion.Euler(0, 180, 0));

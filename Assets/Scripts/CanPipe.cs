@@ -15,7 +15,6 @@ private GameObject pipeCan;
 public GameObject tippedCan; //newTippedCan in CanBehaviour script
 public GameObject createdGoo; //createdGoo in GooSpill script
 public GameObject FallenGoo; //created in GooFlow script
-//TODO track this to be deleted ^
 
 public bool switchedToTippedCan;
 public GameObject smoke;

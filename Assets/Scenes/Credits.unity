@@ -325,8 +325,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -240}
-  m_SizeDelta: {x: 1034.6431, y: 78.3277}
+  m_AnchoredPosition: {x: 0, y: -281}
+  m_SizeDelta: {x: 1034.6431, y: 58.70117}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &362396806
 MonoBehaviour:
@@ -375,8 +375,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -461,7 +461,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000029802, y: -348}
+  m_AnchoredPosition: {x: -0.00012668, y: -360}
   m_SizeDelta: {x: 271.95508, y: 70.02852}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &456415005
@@ -589,7 +589,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00012828, y: 75}
+  m_AnchoredPosition: {x: -0.00012828, y: 98}
   m_SizeDelta: {x: 1034.6431, y: 78.3277}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &701130885
@@ -1288,8 +1288,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00019242, y: -78}
-  m_SizeDelta: {x: 1034.6431, y: 170.88641}
+  m_AnchoredPosition: {x: 0.0000013277, y: -86}
+  m_SizeDelta: {x: 1034.6431, y: 205.61029}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1919467366
 MonoBehaviour:
@@ -1310,8 +1310,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Special thanks to Adam for always helping when I need it the most (and
+  m_text: 'Special thanks to Adam for always helping when I need it the most (and
     also letting me crash his office every day).
+
+
+    Shoutout to Colin and James
+    for playtesting, helping out with art and concepts, and of course reminding me
+    that IT is life.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cf6d7d779df53a74396b2ab57e8b4246, type: 2}
   m_sharedMaterial: {fileID: 7103440640707459996, guid: cf6d7d779df53a74396b2ab57e8b4246,
@@ -1339,10 +1344,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 31.5
+  m_fontSizeBase: 32
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1

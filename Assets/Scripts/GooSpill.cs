@@ -25,7 +25,7 @@ public bool spillRight;
     void Spill()
     //yep, this is the spilly bit!
     {
-        if (spillRight == true) //direction specific //! base off of can direction instead, character may have changed direction by the time it spills
+        if (spillRight == true) //direction specific (inherited from the can)
         {
             //to the right
             createdGoo = Instantiate(goo, new Vector3(transform.position.x, transform.position.y - .36f, transform.position.z), Quaternion.Euler(0, 180, 0));

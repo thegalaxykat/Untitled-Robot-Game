@@ -28,7 +28,7 @@ public class CanBehaviour : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.E)
+        if (Input.GetKeyUp(KeyCode.E) //* maybe change to W
         && pickUpScript.objectPickedUp == true)
         {
             //drop the can

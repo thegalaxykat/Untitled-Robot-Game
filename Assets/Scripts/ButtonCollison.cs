@@ -23,16 +23,25 @@ public class ButtonCollison : MonoBehaviour{
     //trigger enter
 	public void OnTriggerEnter2D(Collider2D other)
 	{
-        buttonTrigger = true;
+        //if other has a tag that matches the player or the crate
+        if(other.tag == "crate" 
+        || other.tag == "Player")
+        {
+            buttonTrigger = true;
+        }
 	}
 
-    //trigger stay
-	private void OnTriggerStay2D(Collider2D other)
+	//trigger stay
+	private void OnTriggerStay2D(Collider2D other) //if other has a tag that matches the player or the crate
 	{
-		animate.SetBool("ButtonPressed", true);
-		buttonActivated = true;
-		buttonBeenPressed = true;
-        buttonTrigger = false;
+		if (other.tag == "crate"
+		|| other.tag == "Player")
+		{
+			animate.SetBool("ButtonPressed", true);
+			buttonActivated = true;
+			buttonBeenPressed = true;
+			buttonTrigger = false;
+		}
 	}
 
     //trigger exit
@@ -42,5 +51,4 @@ public class ButtonCollison : MonoBehaviour{
 		buttonActivated = false;
         buttonTrigger = false;
 	}
-
 }

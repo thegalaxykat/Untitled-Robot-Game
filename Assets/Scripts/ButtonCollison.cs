@@ -24,7 +24,7 @@ public class ButtonCollison : MonoBehaviour{
 	public void OnTriggerEnter2D(Collider2D other)
 	{
         //if other has a tag that matches the player or the crate
-        if(other.tag == "crate" 
+        if(other.tag == "Crate" 
         || other.tag == "Player")
         {
             buttonTrigger = true;
@@ -34,7 +34,7 @@ public class ButtonCollison : MonoBehaviour{
 	//trigger stay
 	private void OnTriggerStay2D(Collider2D other) //if other has a tag that matches the player or the crate
 	{
-		if (other.tag == "crate"
+		if (other.tag == "Crate"
 		|| other.tag == "Player")
 		{
 			animate.SetBool("ButtonPressed", true);

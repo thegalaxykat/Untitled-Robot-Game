@@ -3,6 +3,8 @@ A Unity game where a robot jumps around a cave and solves puzzles with goo. I on
 
 **DISCLAIMER** This was a passion project in high school and my first real attempt at programming. I didn't know much about coding structures or conventions yet ;p
 
+Many assets from [Kenny.nl](https://kenney.nl/assets)
+
 ## Screenshots:
 
 ![TitleScreen](https://github.com/thegalaxykat/robotgame/assets/60857666/f063c040-0d7a-4b4b-909b-bcf84d840fc8)

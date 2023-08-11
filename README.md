@@ -1,9 +1,8 @@
 # Untitled Robot Game
+##### Download and play the game [here](https://github.com/thegalaxykat/robotgame/releases/download/1.0/Robot.Game.exe).
 A Unity game where a robot jumps around a cave and solves puzzles with goo. I only had time to design two levels but the mechanics could easily support more. 
 
 **DISCLAIMER** This was a passion project in high school and my first real attempt at programming. I didn't know much about coding structures or conventions yet ;p
-
-Many assets from [Kenny.nl](https://kenney.nl/assets)
 
 ## Screenshots:
 
@@ -12,3 +11,6 @@ Many assets from [Kenny.nl](https://kenney.nl/assets)
 ![Screenshot](https://github.com/thegalaxykat/robotgame/assets/60857666/cc65861d-17b6-47f8-8853-a5f27eace4db)
 
 ![Screenshot2](https://github.com/thegalaxykat/robotgame/assets/60857666/0c5c7d07-deb6-473f-951d-efcd7c2a94ea)
+
+
+Many assets from [Kenny.nl](https://kenney.nl/assets)
